@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+
+  php-fpm:
+    image: localhost/calculator-php-fpm:latest
+    restart: always
+    container_name: calculator-php-fpm
+    volumes:
+      - ./:/var/www/html
+
+  nginx:
+    image: localhost/calculator-nginx:latest
+    restart: always
+    container_name: calculator-nginx
+    ports:
+      - ${APP_WEB_PORT}:80
+    environment:
+      PHP_UPSTREAM_CONTAINER: php-fpm
+      PHP_UPSTREAM_PORT: 9000
+    depends_on:
+      - php-fpm
+    volumes:
+      - ./web:/var/www/html/web
