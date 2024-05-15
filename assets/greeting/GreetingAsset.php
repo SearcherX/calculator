@@ -14,7 +14,7 @@ class GreetingAsset extends AssetBundle
     ];
 
     public $css = [
-        'site.css',
+        'style.css',
     ];
 
     public function init()
