@@ -34,7 +34,7 @@ function getPriceTonnages(string $rawType, array $prices): array {
 
 function getBorderClass($month, $tonnage, $postMonth, $postTonnage): string
 {
-    if ($month === mb_strtolower($postMonth) && $tonnage === (int)$postTonnage) {
+    if ($month === $postMonth && $tonnage === (int)$postTonnage) {
         return 'with-border';
     }
 
@@ -47,4 +47,9 @@ function getDropDownArray(array $arr): array
         return mb_convert_case($str, MB_CASE_TITLE, "UTF-8");
     }, $arr);
     return array_combine($arr, $values);
+}
+
+function isSetAllAttributes($month, $tonnage, $raw_type): bool
+{
+    return isset($month) && isset($tonnage) && isset($raw_type);
 }

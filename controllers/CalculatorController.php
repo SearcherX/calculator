@@ -21,17 +21,21 @@ class CalculatorController extends Controller
         $monthsList = getDropDownArray($lists['months']);
         $tonnagesList = getDropDownArray($lists['tonnages']);
         $raw_typesList = getDropDownArray($lists['raw_types']);
-        $selectedMonth = null;
-        $selectedTonnage = null;
-        $selectedRaw_type = null;
         $price = null;
         $raw_typePrices = null;
         $headTableTM = null;
 
         if($form_model->load(\Yii::$app->request->post())){
-            $selectedMonth = $monthsList[$form_model->month];
-            $selectedTonnage = $tonnagesList[$form_model->tonnage];
-            $selectedRaw_type = $raw_typesList[$form_model->raw_type];
+            if (!$form_model->validate()) {
+                // данные не корректны: $errors - массив содержащий сообщения об ошибках
+                $errors = $form_model->errors;
+                return $this->render('index', compact(
+                    'form_model',
+                    'monthsList',
+                    'tonnagesList',
+                    'raw_typesList'
+                ));
+            }
             $raw_typePrices = $prices[$form_model->raw_type];
             $price = $raw_typePrices[$form_model->month][$form_model->tonnage];
             $headTableTM = getPriceTonnages($form_model->raw_type, $prices);
@@ -44,9 +48,6 @@ class CalculatorController extends Controller
             'monthsList',
             'tonnagesList',
             'raw_typesList',
-            'selectedMonth',
-            'selectedTonnage',
-            'selectedRaw_type',
             'price',
             'headTableTM',
             'bodyTableTM')

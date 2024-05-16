@@ -1,6 +1,5 @@
 <?php
 
-use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -11,7 +10,7 @@ $lists = require_once PROJECT_ROOT . "config/lists.php";
 $prices = require_once PROJECT_ROOT . "config/prices.php";
 ?>
 
-<main class="main" class="flex-shrink-0" role="main" ">
+<main class="main flex-shrink-0" role="main" ">
 <div class=" container " id=" main-block ">
     <div class=" text-center mb-4 mt-3 ">
         <h1>Калькулятор стоимости доставки сырья</h1>
@@ -63,7 +62,7 @@ $prices = require_once PROJECT_ROOT . "config/prices.php";
         </div>
     </div>
 
-    <?php if (empty($_POST) === false): ?>
+    <?php if (isSetAllAttributes($form_model->month, $form_model->tonnage, $form_model->raw_type)): ?>
 
         <div id=" result " class=" mb-4">
             <div class="row justify-content-center mt-5 ">
@@ -73,15 +72,15 @@ $prices = require_once PROJECT_ROOT . "config/prices.php";
                         <ul class="list-group list-group-flush ">
                             <li class="list-group-item ">
                                 <strong>Месяц: </strong>
-                                <?= $selectedMonth ?>
+                                <?= mb_convert_case($form_model->month, MB_CASE_TITLE, 'UTF-8') ?>
                             </li>
                             <li class="list-group-item ">
                                 <strong>Тоннаж: </strong>
-                                <?= $selectedTonnage ?>
+                                <?= $form_model->tonnage ?>
                             </li>
                             <li class="list-group-item ">
                                 <strong>Тип сырья: </strong>
-                                <?= $selectedRaw_type ?>
+                                <?= mb_convert_case($form_model->raw_type, MB_CASE_TITLE, 'UTF-8') ?>
                             </li>
                             <li class="list-group-item ">
                                 <strong>Итог, руб.: </strong>
@@ -107,7 +106,7 @@ $prices = require_once PROJECT_ROOT . "config/prices.php";
                                 <?php foreach ($tonnages as $tonnage => $price) { ?>
                                     <td
                                             class="<?= getBorderClass(
-                                                $month, $tonnage, $selectedMonth, $selectedTonnage
+                                                $month, $tonnage, $form_model->month, $form_model->tonnage
                                             ) ?>">
                                         <?= $price ?>
                                     </td>

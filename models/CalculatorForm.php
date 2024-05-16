@@ -13,7 +13,7 @@ class CalculatorForm extends Model
     public function rules()
     {
         return [
-            [['month', 'tonnage', 'raw_type'], 'required']
+            [['month', 'tonnage', 'raw_type'], 'required', 'message' => 'Пожалуйста, выберите значение из списка'],
         ];
     }
 }
