@@ -44,7 +44,7 @@ function getBorderClass($month, $tonnage, $postMonth, $postTonnage): string
 function getDropDownArray(array $arr): array
 {
     $values = array_map(function ($str) {
-        return mb_convert_case($str, MB_CASE_TITLE, "UTF-8");
+        return mb_convert_case($str, MB_CASE_TITLE, 'UTF-8');
     }, $arr);
     return array_combine($arr, $values);
 }

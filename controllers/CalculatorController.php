@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\CalculatorForm;
+use Yii;
 use yii\web\Controller;
 
 const PROJECT_ROOT = __DIR__ . "/../";
@@ -52,6 +53,34 @@ class CalculatorController extends Controller
             'headTableTM',
             'bodyTableTM')
         );
+    }
+
+    public function actionCalculator()
+    {
+        global $lists, $prices;
+        $form_model = new CalculatorForm();
+        $monthsList = getDropDownArray($lists['months']);
+        $tonnagesList = getDropDownArray($lists['tonnages']);
+        $raw_typesList = getDropDownArray($lists['raw_types']);
+
+        if (empty(Yii::$app->request->post()) === false) {
+            $basePath = Yii::getAlias('@runtime') . '/queue.job';
+
+            if (file_exists($basePath)) {
+                unlink($basePath);
+            }
+
+            foreach (Yii::$app->request->post()['CalculatorForm'] as $key => $value) {
+                file_put_contents($basePath, "$key = $value", FILE_APPEND);
+            }
+        }
+
+        return $this->render('calculator', compact(
+            'form_model',
+            'monthsList',
+            'tonnagesList',
+            'raw_typesList'
+        ));
     }
 
 }
