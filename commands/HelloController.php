@@ -7,6 +7,7 @@
 
 namespace app\commands;
 
+use Yii;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
@@ -25,10 +26,22 @@ class HelloController extends Controller
      * @param string $message the message to be echoed.
      * @return int Exit code
      */
-    public function actionIndex($message = 'hello world')
+    public function actionIndex()
     {
-        echo $message . "\n";
+        $counter = 0;
+        $basePath = Yii::getAlias('@runtime') . '/queue.job';
 
-        return ExitCode::OK;
+        while (true) {
+            $counter++;
+            echo 'Количество итераций запуска инструкции чтения файла: ' . $counter . PHP_EOL;
+
+            if (file_exists($basePath)) {
+                $data = file_get_contents($basePath);
+                echo $data;
+                unlink($basePath);
+            }
+
+            sleep(2);
+        }
     }
 }
