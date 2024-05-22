@@ -41,3 +41,6 @@ docker-build-nginx:
 
 composer-install:
 	@docker compose -p calculator run --rm php-fpm composer install --no-cache
+
+yii-run:
+	@docker compose -p calculator run --rm php-fpm php ./yii $(cmd)
