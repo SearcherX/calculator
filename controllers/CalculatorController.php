@@ -66,13 +66,11 @@ class CalculatorController extends Controller
         if (empty(Yii::$app->request->post()) === false) {
             $basePath = Yii::getAlias('@runtime') . '/queue.job';
 
-            if (file_exists($basePath)) {
-                unlink($basePath);
+            foreach (Yii::$app->request->post()['CalculatorForm'] as $key => $value) {
+                file_put_contents($basePath, "$key => $value" . PHP_EOL, FILE_APPEND);
             }
 
-            foreach (Yii::$app->request->post()['CalculatorForm'] as $key => $value) {
-                file_put_contents($basePath, "$key = $value", FILE_APPEND);
-            }
+            file_put_contents($basePath, "..." . PHP_EOL, FILE_APPEND);
         }
 
         return $this->render('calculator', compact(

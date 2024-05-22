@@ -26,21 +26,19 @@ class HelloController extends Controller
      * @param string $message the message to be echoed.
      * @return int Exit code
      */
-    public function actionIndex($message = 'hello world', $message2 = 'привет ')
+    public function actionIndex()
     {
         $counter = 0;
         $basePath = Yii::getAlias('@runtime') . '/queue.job';
 
         while (true) {
             $counter++;
-            echo 'Текущая операция: ' . $counter . PHP_EOL;
+            echo 'Количество итераций запуска инструкции чтения файла: ' . $counter . PHP_EOL;
 
             if (file_exists($basePath)) {
                 $data = file_get_contents($basePath);
                 echo $data;
                 unlink($basePath);
-            } else {
-                echo 'Ничего нет';
             }
 
             sleep(2);
