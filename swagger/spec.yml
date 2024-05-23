@@ -1,0 +1,170 @@
+openapi: "3.0.3"
+info:
+  title: API Калькулятор расчета стоимости доставки
+  version: 1.0.0
+  description: |
+    *Калькулятор расчета стоимости доставки* - сервис расчета стоимости доставки  
+    ### Возможности сервиса
+      - расчет стоимости доставки
+      - реестр месяцев доставик
+      - реестр тоннажа доставки
+      - реестр типов сырья доствки
+      - реестр стоимости доставки
+    
+    Разработчик [{ваше_имя}]({ссылка_на_профиль_github})
+servers:
+  - url: http://localhost:8077
+    description: Сервер локального тестирования
+security:
+  - tokenAuth: []
+tags:
+  - name: months
+    description: Регистр месяцев
+  - name: tonnages
+    description: Регистр тоннажей
+  - name: types
+    description: Регистр типов сырья
+  - name: prices
+    description: Регистр типов сырья
+paths:
+  /api/v1/months:
+    get:
+      tags:
+        - months
+      summary: Получить список месяцев
+      responses:
+        '200':
+          $ref: '#/components/responses/MonthSuccessfulResponse'
+        '401':
+          description: Авторизация не выполнена
+
+  /api/v1/tonnages:
+    get:
+      tags:
+        - tonnages
+      summary: Получить список тоннажей
+      responses:
+        '200':
+          $ref: '#/components/responses/TonnagesSuccessfulResponse'
+        '401':
+          description: Авторизация не выполнена
+
+  /api/v1/types:
+    get:
+      tags:
+        - types
+      summary: Получить список типов сырья
+      responses:
+        '200':
+          $ref: '#/components/responses/TypesSuccessfulResponse'
+        '401':
+          description: Авторизация не выполнена
+
+  /api/v1/prices:
+    get:
+      tags:
+        - prices
+      summary: Рассчитать цену
+      parameters:
+        - name: month
+          in: query
+          required: true
+          schema:
+            type: string
+            example: "январь"
+        - name: type
+          in: query
+          required: true
+          schema:
+            type: string
+            example: "шрот"
+        - name: tonnage
+          in: query
+          required: true
+          schema:
+            type: integer
+            example: 50
+      responses:
+        '200':
+          $ref: '#/components/responses/SuccessfulPricesResponse'
+        '401':
+          description: Авторизация не выполнена
+        '404':
+          description: Стоимость для выбранных параметров отсутствует
+          content:
+            application/json:
+              example:
+                message: "Стоимость для выбранных параметров отсутствует"
+
+components:
+  securitySchemes:
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: X-Api-Key
+
+  responses:
+    MonthSuccessfulResponse:
+      description: Успешный ответ
+      content:
+        application/json:
+          example:
+            - "январь"
+            - "февраль"
+            - "март"
+    TonnagesSuccessfulResponse:
+      description: Успешный ответ
+      content:
+        application/json:
+          example:
+            - 25
+            - 50
+            - 75
+            - 100
+    TypesSuccessfulResponse:
+      description: Успешный ответ
+      content:
+        application/json:
+          example:
+            - "жмых"
+            - "соя"
+            - "шрот"
+    SuccessfulPricesResponse:
+      description: |
+        Успешный ответ в составе стоимости "price" и прайса "price_list" с выводом всех стоимостей по всем месяцям для выбранного типа сырья
+      content:
+        application/json:
+          example:
+            price: 100
+            price_list:
+              жмых:
+                январь:
+                  25: 121
+                  50: 118
+                  75: 137
+                  100: 142
+                февраль:
+                  25: 137
+                  50: 121
+                  75: 124
+                  100: 131
+                август:
+                  25: 124
+                  50: 145
+                  75: 136
+                  100: 138
+                сентябрь:
+                  25: 137
+                  50: 147
+                  75: 143
+                  100: 112
+                октябрь:
+                  25: 122
+                  50: 143
+                  75: 112
+                  100: 117
+                ноябрь:
+                  25: 125
+                  50: 145
+                  75: 136
+                  100: 138
