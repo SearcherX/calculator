@@ -1,5 +1,7 @@
 <?php
 
+use yii\web\JsonParser;
+
 $params = require __DIR__ . '/params.php';
 
 return [
@@ -17,6 +19,7 @@ return [
     'components' => [
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
+            'parsers' => ['application/json'  => JsonParser::class]
         ],
         'cache' => [
             'class' => yii\caching\FileCache::class,
