@@ -19703,3 +19703,330 @@ $_SERVER = [
     'REQUEST_TIME' => 1716792695
     'APP_WEB_PORT' => '8011'
 ]
+2024-05-27 11:02:58 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type bool in /var/www/html/controllers/CalculatorController.php:22
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(22): yii\base\ErrorHandler->handleError(2, 'Trying to acces...', '/var/www/html/c...', 22)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:02:58 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_PURPOSE' => 'prefetch'
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '44424'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716796978.5045
+    'REQUEST_TIME' => 1716796978
+]
+2024-05-27 11:03:00 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type bool in /var/www/html/controllers/CalculatorController.php:22
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(22): yii\base\ErrorHandler->handleError(2, 'Trying to acces...', '/var/www/html/c...', 22)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:03:00 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '44434'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716796980.6691
+    'REQUEST_TIME' => 1716796980
+]
+2024-05-27 11:05:21 [172.20.0.1][-][-][error][Error] Error: Call to undefined function app\controllers\getDropDownArray() in /var/www/html/controllers/CalculatorController.php:15
+Stack trace:
+#0 [internal function]: app\controllers\CalculatorController->actionIndex()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2024-05-27 11:05:20 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'bqgGO5FpcYMciKpov4AouNda5kIhjQI5Hyp_kkBCRzNZ6W8N-Bsy-X64nl7r9U_ckwCIM0TScHFdGEfDEg8Sfg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://127.0.0.1:8011/calculator'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://127.0.0.1:8011'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '57604'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '98'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716797120.5646
+    'REQUEST_TIME' => 1716797120
+]
+2024-05-27 11:06:37 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "CalculatorForm" in /var/www/html/controllers/CalculatorController.php:25
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(25): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 25)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:06:37 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'bqgGO5FpcYMciKpov4AouNda5kIhjQI5Hyp_kkBCRzNZ6W8N-Bsy-X64nl7r9U_ckwCIM0TScHFdGEfDEg8Sfg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://127.0.0.1:8011/calculator'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://127.0.0.1:8011'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '40342'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '98'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716797197.0424
+    'REQUEST_TIME' => 1716797197
+]

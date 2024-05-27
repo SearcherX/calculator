@@ -9,19 +9,15 @@ use yii\web\Controller;
 const PROJECT_ROOT = __DIR__ . "/../";
 include_once PROJECT_ROOT . "utils/utils.php";
 
-global $lists, $prices;
-$lists = require_once PROJECT_ROOT . "config/lists.php";
-$prices = require_once PROJECT_ROOT . "config/prices.php";
-
 class CalculatorController extends Controller
 {
     public function actionIndex()
     {
         global $lists, $prices;
         $form_model = new CalculatorForm();
-        $monthsList = getDropDownArray($lists['months']);
-        $tonnagesList = getDropDownArray($lists['tonnages']);
-        $raw_typesList = getDropDownArray($lists['raw_types']);
+        $monthsList = getDropDownArray(Yii::$app->params['lists']['months']);
+        $tonnagesList = getDropDownArray(Yii::$app->params['lists']['tonnages']);
+        $raw_typesList = getDropDownArray(Yii::$app->params['lists']['raw_types']);
 
         if (empty(Yii::$app->request->post()) === false) {
             $basePath = Yii::getAlias('@runtime') . '/queue.job';
