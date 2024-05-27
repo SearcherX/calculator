@@ -17036,3 +17036,2997 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1715862858.9108
     'REQUEST_TIME' => 1715862858
 ]
+2024-05-23 09:47:28 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "calculator". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculator', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "calculator". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/yii(20): yii\base\Application->run()
+#3 {main}
+2024-05-23 09:47:28 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'c187defdf58f'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716446847.9479
+    'REQUEST_TIME' => 1716446847
+    'argv' => [
+        0 => './yii'
+        1 => 'calculator'
+        2 => '--month=Январь'
+    ]
+    'argc' => 3
+]
+2024-05-23 09:48:33 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "calculator". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculator', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "calculator". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/yii(20): yii\base\Application->run()
+#3 {main}
+2024-05-23 09:48:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'a6a6d3215a0a'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716446912.7543
+    'REQUEST_TIME' => 1716446912
+    'argv' => [
+        0 => './yii'
+        1 => 'calculator'
+        2 => '--mon.t?нварь'
+    ]
+    'argc' => 3
+]
+2024-05-23 09:49:23 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "calculator/index". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculator/inde...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator/inde...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/html/yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "calculator/index". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculator/inde...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/html/yii(20): yii\base\Application->run()
+#3 {main}
+2024-05-23 09:49:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '54e45c8f663e'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716446963.3107
+    'REQUEST_TIME' => 1716446963
+    'argv' => [
+        0 => './yii'
+        1 => 'calculator/index'
+    ]
+    'argc' => 2
+]
+2024-05-23 10:00:08 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: include_once(@app/utils/utils.php): Failed to open stream: No such file or directory in /var/www/html/commands/CalculateController.php:7
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(7): yii\base\ErrorHandler->handleError(2, 'include_once(@a...', '/var/www/html/c...', 7)
+#1 /var/www/html/commands/CalculateController.php(7): include_once()
+#2 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(293): include('/var/www/html/c...')
+#3 [internal function]: yii\BaseYii::autoload('app\\commands\\Ca...')
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(661): class_exists('app\\commands\\Ca...')
+#5 /var/www/html/vendor/yiisoft/yii2/base/Module.php(620): yii\base\Module->createControllerByID('calculate')
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(546): yii\base\Module->createController('')
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 10:00:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '560029e18dde'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716447608.2438
+    'REQUEST_TIME' => 1716447608
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+    ]
+    'argc' => 3
+]
+2024-05-23 10:07:41 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: require_once(/var/www/htmlconfig/lists.php): Failed to open stream: No such file or directory in /var/www/html/commands/CalculateController.php:12
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(12): yii\base\ErrorHandler->handleError(2, 'require_once(/v...', '/var/www/html/c...', 12)
+#1 /var/www/html/commands/CalculateController.php(12): require_once()
+#2 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(293): include('/var/www/html/c...')
+#3 [internal function]: yii\BaseYii::autoload('app\\commands\\Ca...')
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(661): class_exists('app\\commands\\Ca...')
+#5 /var/www/html/vendor/yiisoft/yii2/base/Module.php(620): yii\base\Module->createControllerByID('calculate')
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(546): yii\base\Module->createController('')
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 10:07:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '4fee7b41423d'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716448060.847
+    'REQUEST_TIME' => 1716448060
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+    ]
+    'argc' => 3
+]
+2024-05-23 10:39:59 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Array to string conversion in /var/www/html/utils/utils.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Array to string...', '/var/www/html/u...', 59)
+#1 /var/www/html/utils/utils.php(59): array_combine(Array, Array)
+#2 /var/www/html/commands/CalculateController.php(29): getMonthTonnageTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 10:39:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '1d054f041c23'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716449999.4344
+    'REQUEST_TIME' => 1716449999
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--type=соя'
+    ]
+    'argc' => 3
+]
+2024-05-23 10:41:50 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Array to string conversion in /var/www/html/utils/utils.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Array to string...', '/var/www/html/u...', 59)
+#1 /var/www/html/utils/utils.php(59): array_combine(Array, Array)
+#2 /var/www/html/commands/CalculateController.php(29): getMonthTonnageTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 10:41:49 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '45485d98839a'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716450109.7685
+    'REQUEST_TIME' => 1716450109
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--type=соя'
+    ]
+    'argc' => 3
+]
+2024-05-23 12:30:31 [-][-][-][error][TypeError] TypeError: Illegal offset type in /var/www/html/utils/utils.php:77
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(82): getLengths(Array)
+#1 [internal function]: app\commands\CalculateController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 /var/www/html/yii(20): yii\base\Application->run()
+#10 {main}
+2024-05-23 12:30:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '9d45f61c3360'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716456630.7524
+    'REQUEST_TIME' => 1716456630
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 12:31:06 [-][-][-][error][TypeError] TypeError: array_column(): Argument #2 ($column_key) must be of type string|int|null, array given in /var/www/html/utils/utils.php:77
+Stack trace:
+#0 /var/www/html/utils/utils.php(77): array_column(Array, Array)
+#1 /var/www/html/commands/CalculateController.php(82): getLengths(Array)
+#2 [internal function]: app\commands\CalculateController->actionIndex()
+#3 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 12:31:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '4e068e4c63bc'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716456666.0472
+    'REQUEST_TIME' => 1716456666
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 12:33:48 [-][-][-][error][TypeError] TypeError: key(): Argument #1 ($array) must be of type array, string given in /var/www/html/utils/utils.php:78
+Stack trace:
+#0 /var/www/html/utils/utils.php(78): key('\xD1\x8F\xD0\xBD\xD0\xB2\xD0\xB0\xD1\x80\xD1\x8C')
+#1 /var/www/html/commands/CalculateController.php(82): getLengths(Array)
+#2 [internal function]: app\commands\CalculateController->actionIndex()
+#3 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 12:33:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'cf3d20556512'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716456828.1639
+    'REQUEST_TIME' => 1716456828
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 13:59:44 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Array to string conversion in /var/www/html/vendor/yiisoft/yii2/helpers/BaseConsole.php:293
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/helpers/BaseConsole.php(293): yii\base\ErrorHandler->handleError(2, 'Array to string...', '/var/www/html/v...', 293)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(301): yii\helpers\BaseConsole::ansiFormat(Array, Array)
+#2 /var/www/html/commands/CalculateController.php(40): yii\console\Controller->stdout(Array, 32)
+#3 /var/www/html/commands/CalculateController.php(98): app\commands\CalculateController->printTable(Array)
+#4 [internal function]: app\commands\CalculateController->actionIndex()
+#5 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 /var/www/html/yii(20): yii\base\Application->run()
+#13 {main}
+2024-05-23 13:59:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '3ae4fea279f5'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716461984.1319
+    'REQUEST_TIME' => 1716461984
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 14:09:57 [-][-][-][error][ValueError] ValueError: str_repeat(): Argument #2 ($times) must be greater than or equal to 0 in /var/www/html/commands/CalculateController.php:36
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(36): str_repeat(' ', -2)
+#1 /var/www/html/commands/CalculateController.php(97): app\commands\CalculateController->printTable(Array)
+#2 [internal function]: app\commands\CalculateController->actionIndex()
+#3 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 14:09:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '9812bda53cbb'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716462597.4352
+    'REQUEST_TIME' => 1716462597
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 14:11:15 [-][-][-][error][ValueError] ValueError: str_repeat(): Argument #2 ($times) must be greater than or equal to 0 in /var/www/html/commands/CalculateController.php:36
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(36): str_repeat(' ', -2)
+#1 /var/www/html/commands/CalculateController.php(97): app\commands\CalculateController->printTable(Array)
+#2 [internal function]: app\commands\CalculateController->actionIndex()
+#3 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 14:11:15 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '8966fbc800a8'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716462675.1855
+    'REQUEST_TIME' => 1716462675
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 14:34:55 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $headerStr in /var/www/html/commands/CalculateController.php:44
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(44): yii\base\ErrorHandler->handleError(2, 'Undefined varia...', '/var/www/html/c...', 44)
+#1 /var/www/html/commands/CalculateController.php(55): app\commands\CalculateController->printHeader(Array)
+#2 /var/www/html/commands/CalculateController.php(117): app\commands\CalculateController->printTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 14:34:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '96a19fed09e3'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716464095.4159
+    'REQUEST_TIME' => 1716464095
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 14:41:59 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key 125 in /var/www/html/commands/CalculateController.php:58
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(58): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 58)
+#1 /var/www/html/commands/CalculateController.php(73): app\commands\CalculateController->printRow(Array, Array)
+#2 /var/www/html/commands/CalculateController.php(136): app\commands\CalculateController->printTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 14:41:58 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '99f2a4ba347a'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716464518.8548
+    'REQUEST_TIME' => 1716464518
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 14:50:46 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key 25 in /var/www/html/commands/CalculateController.php:75
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(75): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 75)
+#1 /var/www/html/commands/CalculateController.php(138): app\commands\CalculateController->printTable(Array)
+#2 [internal function]: app\commands\CalculateController->actionIndex()
+#3 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#5 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#10 /var/www/html/yii(20): yii\base\Application->run()
+#11 {main}
+2024-05-23 14:50:46 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '0811ba1049e9'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716465046.1732
+    'REQUEST_TIME' => 1716465046
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 15:00:10 [-][-][-][error][ValueError] ValueError: str_repeat(): Argument #2 ($times) must be greater than or equal to 0 in /var/www/html/commands/CalculateController.php:55
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(55): str_repeat(' ', -1)
+#1 /var/www/html/commands/CalculateController.php(73): app\commands\CalculateController->printRow(100, Array, Array)
+#2 /var/www/html/commands/CalculateController.php(136): app\commands\CalculateController->printTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 15:00:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '95a64cd209fd'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716465610.2931
+    'REQUEST_TIME' => 1716465610
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 15:01:00 [-][-][-][error][ValueError] ValueError: str_repeat(): Argument #2 ($times) must be greater than or equal to 0 in /var/www/html/commands/CalculateController.php:55
+Stack trace:
+#0 /var/www/html/commands/CalculateController.php(55): str_repeat(' ', -1)
+#1 /var/www/html/commands/CalculateController.php(73): app\commands\CalculateController->printRow(100, Array, Array)
+#2 /var/www/html/commands/CalculateController.php(136): app\commands\CalculateController->printTable(Array)
+#3 [internal function]: app\commands\CalculateController->actionIndex()
+#4 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('calculate', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('calculate', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 /var/www/html/yii(20): yii\base\Application->run()
+#12 {main}
+2024-05-23 15:01:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'e7a54375a4d9'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '1'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'TERM' => 'xterm'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1716465660.3773
+    'REQUEST_TIME' => 1716465660
+    'argv' => [
+        0 => './yii'
+        1 => 'calculate'
+        2 => '--month=Январь'
+        3 => '--type=шрот'
+        4 => '--tonnage=25'
+    ]
+    'argc' => 5
+]
+2024-05-23 16:35:46 [172.18.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "swagger-ui". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('swagger-ui', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /var/www/html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2024-05-23 16:35:46 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '73c4337b6137'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.3'
+    'REMOTE_PORT' => '59832'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/swagger-ui'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716471346.3642
+    'REQUEST_TIME' => 1716471346
+]
+2024-05-23 16:36:21 [172.18.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "swagger-ui". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('swagger-ui', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /var/www/html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2024-05-23 16:36:21 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '73c4337b6137'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.3'
+    'REMOTE_PORT' => '59832'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/swagger-ui'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716471381.8434
+    'REQUEST_TIME' => 1716471381
+]
+2024-05-23 17:05:41 [172.18.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Авторизация не выполнена in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-23 17:05:41 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '86671e6a10f5'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '34702'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473141.2459
+    'REQUEST_TIME' => 1716473141
+]
+2024-05-23 17:05:57 [172.18.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Авторизация не выполнена in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-23 17:05:57 [172.18.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '86671e6a10f5'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '32a3dfa9-6897-4c5f-9d83-1d8e0c233df9'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.18.0.4'
+    'REMOTE_PORT' => '34514'
+    'REMOTE_ADDR' => '172.18.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473157.5924
+    'REQUEST_TIME' => 1716473157
+]
+2024-05-23 17:07:31 [172.20.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Авторизация не выполнена in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-23 17:07:31 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'e02905adc03c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=d0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '1947d13e-0787-44ca-9f8e-11f6880d9642'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.4'
+    'REMOTE_PORT' => '49708'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473251.0284
+    'REQUEST_TIME' => 1716473251
+]
+2024-05-23 17:11:48 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "X-API-KEY" in /var/www/html/components/filters/TokenAuthMiddleware.php:17
+Stack trace:
+#0 /var/www/html/components/filters/TokenAuthMiddleware.php(17): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 17)
+#1 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2024-05-23 17:11:48 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'e02905adc03c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=d0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '1716d240-60f8-4bfb-abdf-eff3511d76b0'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.4'
+    'REMOTE_PORT' => '43714'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473508.3805
+    'REQUEST_TIME' => 1716473508
+]
+2024-05-23 17:12:20 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "X-API-KEY" in /var/www/html/components/filters/TokenAuthMiddleware.php:15
+Stack trace:
+#0 /var/www/html/components/filters/TokenAuthMiddleware.php(15): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 15)
+#1 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2024-05-23 17:12:20 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'e02905adc03c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=d0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '1bd69e2d-10d5-4365-b94f-ea5debb57f3b'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.4'
+    'REMOTE_PORT' => '43714'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473540.2622
+    'REQUEST_TIME' => 1716473540
+]
+2024-05-23 17:13:26 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "X-API-KEY" in /var/www/html/components/filters/TokenAuthMiddleware.php:15
+Stack trace:
+#0 /var/www/html/components/filters/TokenAuthMiddleware.php(15): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 15)
+#1 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2024-05-23 17:13:26 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => 'e02905adc03c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=d0ff25035d468f02d65807b0e5bf95c8d91263f52dd6e3250b16416b1ab03bdda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u1drBQxoXqvJmwem4ag_96oQ0lzieSxQ%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '22557cf9-d71d-414d-b680-2c6d6fce1499'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.4'
+    'REMOTE_PORT' => '58392'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716473606.346
+    'REQUEST_TIME' => 1716473606
+]
+2024-05-23 19:23:02 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "X-API-KEY" in /var/www/html/components/filters/TokenAuthMiddleware.php:15
+Stack trace:
+#0 /var/www/html/components/filters/TokenAuthMiddleware.php(15): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 15)
+#1 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2024-05-23 19:23:02 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => 'e02905adc03c'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => ''
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '02f87bf7-f8ee-4a45-bb7a-4a23eaa8a5b5'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '47746'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716481382.1673
+    'REQUEST_TIME' => 1716481382
+]
+2024-05-24 12:48:17 [172.20.0.1][-][-][error][Error] Error: Class "app\components\filters\Dotenv\Dotenv" not found in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-24 12:48:17 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => 'b380ccfd-c679-458a-9823-1884b64e5d93'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '57956'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716544097.1072
+    'REQUEST_TIME' => 1716544097
+]
+2024-05-24 12:49:21 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type bool in /var/www/html/controllers/CalculatorController.php:22
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(22): yii\base\ErrorHandler->handleError(2, 'Trying to acces...', '/var/www/html/c...', 22)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('index', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-24 12:49:21 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '48530'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716544161.0608
+    'REQUEST_TIME' => 1716544161
+]
+2024-05-24 12:49:41 [172.20.0.1][-][-][error][Error] Error: Class "app\components\filters\Dotenv\Dotenv" not found in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-24 12:49:41 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '48530'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716544181.7217
+    'REQUEST_TIME' => 1716544181
+]
+2024-05-24 13:01:17 [172.20.0.1][-][-][error][Error] Error: Class "app\components\filters\Dotenv\Dotenv" not found in /var/www/html/components/filters/TokenAuthMiddleware.php:16
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-24 13:01:17 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '37686'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716544877.1194
+    'REQUEST_TIME' => 1716544877
+]
+2024-05-24 13:01:59 [172.20.0.1][-][-][error][TypeError] TypeError: Dotenv\Dotenv::__construct(): Argument #1 ($store) must be of type Dotenv\Store\StoreInterface, string given, called in /var/www/html/components/filters/TokenAuthMiddleware.php on line 17 and defined in /var/www/html/vendor/vlucas/phpdotenv/src/Dotenv.php:60
+Stack trace:
+#0 /var/www/html/components/filters/TokenAuthMiddleware.php(17): Dotenv\Dotenv->__construct('/var/www/html/c...')
+#1 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2024-05-24 13:01:59 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '37686'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716544918.968
+    'REQUEST_TIME' => 1716544918
+]
+2024-05-24 13:05:01 [172.20.0.1][-][-][error][Dotenv\Exception\InvalidPathException] Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [/var/www/html/components/filters/.env]. in /var/www/html/vendor/vlucas/phpdotenv/src/Store/FileStore.php:68
+Stack trace:
+#0 /var/www/html/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 /var/www/html/components/filters/TokenAuthMiddleware.php(18): Dotenv\Dotenv->load()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2024-05-24 13:05:00 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '42786'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716545100.8501
+    'REQUEST_TIME' => 1716545100
+]
+2024-05-24 13:08:07 [172.20.0.1][-][-][error][Dotenv\Exception\InvalidPathException] Dotenv\Exception\InvalidPathException: At least one environment file path must be provided. in /var/www/html/vendor/vlucas/phpdotenv/src/Store/FileStore.php:59
+Stack trace:
+#0 /var/www/html/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 /var/www/html/components/filters/TokenAuthMiddleware.php(21): Dotenv\Dotenv->load()
+#2 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#9 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2024-05-24 13:08:06 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '49306'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716545286.3821
+    'REQUEST_TIME' => 1716545286
+]
+2024-05-24 13:22:59 [172.20.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Авторизация не выполнена in /var/www/html/components/filters/TokenAuthMiddleware.php:24
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-24 13:22:58 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.4'
+    'REMOTE_PORT' => '43608'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716546178.6218
+    'REQUEST_TIME' => 1716546178
+    'APP_WEB_PORT' => '8011'
+]
+2024-05-27 09:18:31 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "/api/v1/types". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/types', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /var/www/html/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in /var/www/html/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2024-05-27 09:18:31 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '496eb32f-6c3f-4cdc-b877-7b001c7ab2b4'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '58134'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/types'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716790710.9511
+    'REQUEST_TIME' => 1716790710
+]
+2024-05-27 09:19:41 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "raw_type" in /var/www/html/controllers/api/v1/TypesController.php:24
+Stack trace:
+#0 /var/www/html/controllers/api/v1/TypesController.php(24): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 24)
+#1 [internal function]: app\controllers\api\v1\TypesController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/types', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 09:19:41 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => '1c17f9b7-7651-45ce-8836-c19166ca71ba'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '58134'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/types'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716790781.3224
+    'REQUEST_TIME' => 1716790781
+    'APP_WEB_PORT' => '8011'
+]
+2024-05-27 09:30:39 [172.20.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Авторизация не выполнена in /var/www/html/components/filters/TokenAuthMiddleware.php:24
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/ActionFilter.php(77): app\components\filters\TokenAuthMiddleware->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /var/www/html/vendor/yiisoft/yii2/base/Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /var/www/html/vendor/yiisoft/yii2/web/Controller.php(219): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(176): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#7 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('api/v1/months', Array)
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2024-05-27 09:30:38 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '38974'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/v1/months'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716791438.562
+    'REQUEST_TIME' => 1716791438
+    'APP_WEB_PORT' => '8011'
+]
+2024-05-27 09:41:32 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "соя" in /var/www/html/controllers/api/v1/PricesController.php:26
+Stack trace:
+#0 /var/www/html/controllers/api/v1/PricesController.php(26): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 26)
+#1 [internal function]: app\controllers\api\v1\PricesController->actionIndex('\xD1\x8F\xD0\xBD\xD0\xB2\xD0\xB0\xD1\x80\xD1\x8C', '\xD1\x81\xD0\xBE\xD1\x8F', '25')
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/prices', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 09:41:31 [172.20.0.1][-][-][info][application] $_GET = [
+    'month' => 'январь'
+    'type' => 'соя'
+    'tonnage' => '25'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => 'bb687d79-bfa8-4019-b464-0ad18af98eaa'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '51804'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/prices?month=%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C&type=%D1%81%D0%BE%D1%8F&tonnage=25'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'month=%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C&type=%D1%81%D0%BE%D1%8F&tonnage=25'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716792091.8373
+    'REQUEST_TIME' => 1716792091
+    'APP_WEB_PORT' => '8011'
+]
+2024-05-27 09:51:36 [172.20.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Стоимость для выбранных параметров отсутствует in /var/www/html/controllers/api/v1/PricesController.php:31
+Stack trace:
+#0 [internal function]: app\controllers\api\v1\PricesController->actionIndex('\xD1\x8F\xD0\xBD\xD0\xB2\xD0\xB0\xD1\x80\xD1\x8C', '\xD0\xB6\xD0\xBC\xD1\x8B\xD1\x85', '125')
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('/api/v1/prices', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2024-05-27 09:51:36 [172.20.0.1][-][-][info][application] $_GET = [
+    'month' => 'январь'
+    'type' => 'жмых'
+    'tonnage' => '125'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=1a8e1cc52ff0dab7510aca445278f84bedb6b09ae491a4b6afeca12ef3eaa836a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22W4YOkN_TDt-Il0eFyXmI_RAzZeMIFVkV%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'HTTP_POSTMAN_TOKEN' => 'e978a3d1-dcf7-49ea-8d12-1c855bcbf18e'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.39.0'
+    'HTTP_X_API_KEY' => 'abc'
+    'HTTP_ACCEPT' => 'application/json'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '46200'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '//api/v1/prices?month=%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C&type=%D0%B6%D0%BC%D1%8B%D1%85&tonnage=125'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'month=%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8C&type=%D0%B6%D0%BC%D1%8B%D1%85&tonnage=125'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716792695.9427
+    'REQUEST_TIME' => 1716792695
+    'APP_WEB_PORT' => '8011'
+]
+2024-05-27 11:02:58 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type bool in /var/www/html/controllers/CalculatorController.php:22
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(22): yii\base\ErrorHandler->handleError(2, 'Trying to acces...', '/var/www/html/c...', 22)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:02:58 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_PURPOSE' => 'prefetch'
+    'HTTP_SEC_PURPOSE' => 'prefetch;prerender'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '44424'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716796978.5045
+    'REQUEST_TIME' => 1716796978
+]
+2024-05-27 11:03:00 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Trying to access array offset on value of type bool in /var/www/html/controllers/CalculatorController.php:22
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(22): yii\base\ErrorHandler->handleError(2, 'Trying to acces...', '/var/www/html/c...', 22)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:03:00 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '44434'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716796980.6691
+    'REQUEST_TIME' => 1716796980
+]
+2024-05-27 11:05:21 [172.20.0.1][-][-][error][Error] Error: Call to undefined function app\controllers\getDropDownArray() in /var/www/html/controllers/CalculatorController.php:15
+Stack trace:
+#0 [internal function]: app\controllers\CalculatorController->actionIndex()
+#1 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /var/www/html/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2024-05-27 11:05:20 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'bqgGO5FpcYMciKpov4AouNda5kIhjQI5Hyp_kkBCRzNZ6W8N-Bsy-X64nl7r9U_ckwCIM0TScHFdGEfDEg8Sfg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://127.0.0.1:8011/calculator'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://127.0.0.1:8011'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '57604'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '98'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716797120.5646
+    'REQUEST_TIME' => 1716797120
+]
+2024-05-27 11:06:37 [172.20.0.1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "CalculatorForm" in /var/www/html/controllers/CalculatorController.php:25
+Stack trace:
+#0 /var/www/html/controllers/CalculatorController.php(25): yii\base\ErrorHandler->handleError(2, 'Undefined array...', '/var/www/html/c...', 25)
+#1 [internal function]: app\controllers\CalculatorController->actionIndex()
+#2 /var/www/html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('', Array)
+#5 /var/www/html/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calculator', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2024-05-27 11:06:37 [172.20.0.1][-][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf' => 'bqgGO5FpcYMciKpov4AouNda5kIhjQI5Hyp_kkBCRzNZ6W8N-Bsy-X64nl7r9U_ckwCIM0TScHFdGEfDEg8Sfg=='
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7Ai6irCzb046TugdDZnqe_rHB28QRMUM\";}'
+]
+
+$_SERVER = [
+    'HOSTNAME' => '68186db923ec'
+    'PHP_INI_DIR' => '/usr/local/etc/php'
+    'SHLVL' => '2'
+    'HOME' => '/'
+    'PHP_LDFLAGS' => '-Wl,-O1 -pie'
+    'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_VERSION' => '8.2.13'
+    'GPG_KEYS' => '39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC'
+    'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64'
+    'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz.asc'
+    'PHP_URL' => 'https://www.php.net/distributions/php-8.2.13.tar.xz'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'X_API_KEY' => 'abc'
+    'PHPIZE_DEPS' => 'autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c'
+    'PWD' => '/var/www/html'
+    'PHP_SHA256' => '2629bba10117bf78912068a230c68a8fd09b7740267bd8ebd3cfce91515d454b'
+    'HTTP_COOKIE' => '_csrf=7469c0a2aec9c02f91365ef38be4e6b9eb00b0d4c30e622df0361c599c8ff248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227Ai6irCzb046TugdDZnqe_rHB28QRMUM%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_REFERER' => 'http://127.0.0.1:8011/calculator'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ORIGIN' => 'http://127.0.0.1:8011'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA' => '\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONTENT_LENGTH' => '98'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => '127.0.0.1:8011'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'default_server'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.20.0.2'
+    'REMOTE_PORT' => '40342'
+    'REMOTE_ADDR' => '172.20.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.24.0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/calculator'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '98'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1716797197.0424
+    'REQUEST_TIME' => 1716797197
+]

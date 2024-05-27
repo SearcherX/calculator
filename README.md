@@ -19,6 +19,7 @@
 ```dotenv
 # Порт веб-сервера
 APP_WEB_PORT=8077
+X_API_KEY="key"
 ```
 
 ## Установка с использованием docker compose
