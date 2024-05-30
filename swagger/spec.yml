@@ -13,7 +13,7 @@ info:
     
     Разработчик [{ваше_имя}]({ссылка_на_профиль_github})
 servers:
-  - url: http://localhost:8077
+  - url: http://127.0.0.1:8011
     description: Сервер локального тестирования
 security:
   - tokenAuth: []
