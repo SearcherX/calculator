@@ -17,6 +17,7 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'db' => require __DIR__ . '/db.php',
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
             'parsers' => ['application/json'  => JsonParser::class]

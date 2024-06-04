@@ -44,3 +44,9 @@ composer-install:
 
 yii-run:
 	@docker compose -p calculator run --rm php-fpm php ./yii $(cmd)
+
+yii-migrate:
+	@docker-compose -p calculator run --rm php-fpm php ./yii migrate
+
+yii-migration-create:
+	@docker-compose -p calculator run --rm php-fpm php ./yii migrate/create $(name)
