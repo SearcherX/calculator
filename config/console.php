@@ -13,6 +13,7 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'db' => require __DIR__ . '/db.php',
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
