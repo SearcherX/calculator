@@ -1,6 +1,7 @@
 <?php
 
 use yii\web\JsonParser;
+use yii\web\Response;
 
 $params = require __DIR__ . '/params.php';
 
@@ -22,6 +23,17 @@ return [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
             'parsers' => ['application/json'  => JsonParser::class]
         ],
+        'response' => [
+            'class' => Response::class,
+            'on beforeSend' => function ($event) {
+                $response = $event->sender;
+                if ($response->statusCode === 400 || $response->statusCode === 401 || $response->statusCode === 404) {
+                    $response->data = [
+                        'message' => $response->data['message'],
+                    ];
+                }
+            },
+        ],
         'cache' => [
             'class' => yii\caching\FileCache::class,
         ],
@@ -41,7 +53,10 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                // ...
+                'api/v2/months' => 'api/v2/month/index',
+                'api/v2/tonnages' => 'api/v2/tonnage/index',
+                'api/v2/types' => 'api/v2/type/index',
+                'api/v2/prices' => 'api/v2/price/index'
             ],
         ],
     ],
