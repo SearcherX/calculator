@@ -2,6 +2,7 @@
 
 namespace app\components\filters;
 
+use Composer\Util\Http\Response;
 use Dotenv\Dotenv;
 use Yii;
 use yii\base\ActionFilter;
@@ -14,6 +15,8 @@ class TokenAuthMiddleware extends ActionFilter
 {
     public function beforeAction($action): bool
     {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+
         global $projectRoot;
         $token = Yii::$app->request->headers->get('X-Api-Key');
 
