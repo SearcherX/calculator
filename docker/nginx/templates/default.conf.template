@@ -2,10 +2,13 @@ upstream php-upstream {
     server ${PHP_UPSTREAM_CONTAINER}:${PHP_UPSTREAM_PORT};
 }
 
+server_tokens off;
+
 server {
     server_name default_server;
     root /var/www/html/web;
     resolver 127.0.0.11;
+    charset utf-8;
 
     listen 80;
     index index.php index.html;
@@ -29,9 +32,9 @@ server {
         fastcgi_read_timeout 1000;
     }
 
-        location ~ ^/swagger-ui$ {
+         location ~ ^/swagger-ui$ {
             return 301 $scheme://$host:${APP_WEB_PORT}$request_uri/;
-        }
+         }
 
         location ~ ^/swagger-ui/(.*)$ {
             proxy_pass http://swagger:8080/$1;
@@ -39,4 +42,12 @@ server {
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         }
+
+        location ~* /v*/\.(?:json|yml|yaml)$ {
+            #SWAGGER_ROOT
+            expires -1;
+
+            include templates/cors.conf;
+        }
+
 }
