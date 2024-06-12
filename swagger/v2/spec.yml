@@ -1,4 +1,4 @@
-openapi: "3.0.3"
+openapi: "3.1.0"
 info:
   title: API Калькулятор расчета стоимости доставки
   version: 2.0.0
@@ -25,77 +25,8 @@ tags:
   - name: types
     description: Регистр типов сырья
   - name: prices
-    description: Регистр типов сырья
+    description: Регистр стоимости
 paths:
-  /api/v1/months:
-    get:
-      tags:
-        - months
-      summary: Получить список месяцев
-      responses:
-        '200':
-          $ref: '#/components/responses/MonthSuccessfulResponse'
-        '401':
-          description: Авторизация не выполнена
-
-  /api/v1/tonnages:
-    get:
-      tags:
-        - tonnages
-      summary: Получить список тоннажей
-      responses:
-        '200':
-          $ref: '#/components/responses/TonnagesSuccessfulResponse'
-        '401':
-          description: Авторизация не выполнена
-
-  /api/v1/types:
-    get:
-      tags:
-        - types
-      summary: Получить список типов сырья
-      responses:
-        '200':
-          $ref: '#/components/responses/TypesSuccessfulResponse'
-        '401':
-          description: Авторизация не выполнена
-
-  /api/v1/prices:
-    get:
-      tags:
-        - prices
-      summary: Рассчитать цену
-      parameters:
-        - name: month
-          in: query
-          required: true
-          schema:
-            type: string
-            example: "январь"
-        - name: type
-          in: query
-          required: true
-          schema:
-            type: string
-            example: "шрот"
-        - name: tonnage
-          in: query
-          required: true
-          schema:
-            type: integer
-            example: 50
-      responses:
-        '200':
-          $ref: '#/components/responses/SuccessfulPricesResponse'
-        '401':
-          description: Авторизация не выполнена
-        '404':
-          description: Стоимость для выбранных параметров отсутствует
-          content:
-            application/json:
-              example:
-                message: "Стоимость для выбранных параметров отсутствует"
-
   /api/v2/months:
     get:
       tags:

@@ -30,11 +30,15 @@ services:
       - ./web:/var/www/html/web
 
   swagger:
-    image: swaggerapi/swagger-ui:v5.16.2
+    image: swaggerapi/swagger-ui:latest
     environment:
-      URL: /swagger-ui/spec.yml
+      URLS: "[
+      {url:\"/swagger-ui/v1/spec.yml\",name:\"Калькулятор v1\"},
+      {url:\"/swagger-ui/v2/spec.yml\",name:\"Калькулятор v2\"}
+      ]"
     volumes:
-      - ./swagger/spec.yml:/usr/share/nginx/html/spec.yml
+      - ./swagger/v1/spec.yml:/usr/share/nginx/html/v1/spec.yml
+      - ./swagger/v2/spec.yml:/usr/share/nginx/html/v2/spec.yml
 
   mariadb:
     image: mariadb:10.6.14

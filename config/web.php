@@ -13,6 +13,14 @@ return [
     'layout' => 'main',
     'language' => 'ru',
     'defaultRoute' => 'calculator/index',
+    'container' => [
+        'singletons' => [
+            \app\repositories\interfaces\MonthRepositoryInterface::class => \app\repositories\SqlMonthRepository::class,
+            \app\repositories\interfaces\TonnageRepositoryInterface::class => \app\repositories\SqlTonnageRepository::class,
+            \app\repositories\interfaces\TypeRepositoryInterface::class => \app\repositories\SqlTypeRepository::class,
+            \app\repositories\interfaces\PriceRepositoryInterface::class => \app\repositories\SqlPriceRepository::class
+        ],
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -37,9 +45,9 @@ return [
         'cache' => [
             'class' => yii\caching\FileCache::class,
         ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
+//        'errorHandler' => [
+//            'errorAction' => \app\components\ErrorHandler::class,
+//        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

@@ -3,25 +3,23 @@
 namespace app\controllers\api\v2;
 
 use app\components\filters\TokenAuthMiddleware;
-use app\services\DAOUtils;
-use app\services\MonthDAO;
-use app\services\PriceDAO;
-use app\services\TonnageDAO;
-use app\services\TypeDAO;
+use app\services\PriceService;
 use Yii;
-use yii\db\Query;
 use yii\filters\VerbFilter;
 use yii\rest\Controller;
-use yii\web\BadRequestHttpException;
-use yii\web\NotFoundHttpException;
 use yii\web\Response;
-
-$projectRoot = Yii::getAlias('@app');
-include_once $projectRoot . "/utils/utils.php";
 
 class PriceController extends Controller
 {
     public $enableCsrfValidation = false;
+    private PriceService $priceService;
+
+    public function __construct($id, $module, PriceService $priceService, $config = [])
+    {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $this->priceService = $priceService;
+        parent::__construct($id, $module, $config);
+    }
 
     public function behaviors()
     {
@@ -48,28 +46,17 @@ class PriceController extends Controller
     {
         $request = Yii::$app->request;
 
-        switch ($request->method) {
+        switch ($request->getMethod()) {
             case 'GET':
             {
                 $month = $request->get('month');
                 $type = $request->get('type');
                 $tonnage = $request->get('tonnage');
 
-                $monthRecord = MonthDAO::read($month);
-                $typeRecord = TypeDAO::read($type);
-                $tonnageRecord = TonnageDAO::read($tonnage);
-
-                if ($monthRecord === false || $tonnageRecord === false || $typeRecord === false) {
-                    throw new NotFoundHttpException('Стоимость для выбранных параметров отсутствует');
-                }
-
-                $priceRecord = PriceDAO::read($monthRecord['id'], $typeRecord['id'], $tonnageRecord['id']);
-                $rows = PriceDAO::readAll($typeRecord['id']);
-
                 return [
-                    'price' => $priceRecord['price'],
+                    'price' => $this->priceService->getByMonthAndTonnageAndType($month, $tonnage, $type),
                     'price_list' => [
-                        $type => DAOUtils::getTable($rows)
+                        $type => $this->priceService->getPriceByType($type)
                     ]
                 ];
             }
@@ -80,15 +67,10 @@ class PriceController extends Controller
                 $type = $request->post('type');
                 $tonnage = $request->post('tonnage');
                 $price = $request->post('price');
+                $this->priceService->addPrice($month, $tonnage, $type, $price);
+                Yii::$app->response->setStatusCode(201, 'Price added successfully');
 
-                $monthRecord = MonthDAO::read($month);
-                $typeRecord = TypeDAO::read($type);
-                $tonnageRecord = TonnageDAO::read($tonnage);
-
-                PriceDAO::add($price, $monthRecord['id'], $tonnageRecord['id'], $typeRecord['id']);
-                Yii::$app->response->setStatusCode(201, 'Успешное добавление');
-
-                return ['message' => 'Успешное добавление'];
+                return ['message' => 'Price added successfully'];
             }
 
             case 'PATCH':
@@ -97,24 +79,9 @@ class PriceController extends Controller
                 $tonnage = $request->get('tonnage');
                 $month = $request->get('month');
                 $price = $request->post('price');
+                $this->priceService->updatePrice($month, $tonnage, $type, $price);
 
-                $monthRecord = MonthDAO::read($month);
-                $typeRecord = TypeDAO::read($type);
-                $tonnageRecord = TonnageDAO::read($tonnage);
-
-                if ($monthRecord === false || $tonnageRecord === false || $typeRecord === false) {
-                    throw new NotFoundHttpException('Стоимость для выбранных параметров отсутствует');
-                }
-
-                $priceRecord = PriceDAO::read($monthRecord['id'], $typeRecord['id'], $tonnageRecord['id']);
-
-                if ($priceRecord === false) {
-                    throw new NotFoundHttpException('Стоимость для выбранных параметров отсутствует');
-                }
-
-                PriceDAO::update($price, $monthRecord['id'], $tonnageRecord['id'], $typeRecord['id']);
-
-                return ['message' => 'Успешное обновление'];
+                return ['message' => 'Price updated successfully'];
             }
 
             case 'DELETE':
@@ -122,25 +89,10 @@ class PriceController extends Controller
                 $type = $request->get('type');
                 $tonnage = $request->get('tonnage');
                 $month = $request->get('month');
+                $this->priceService->deletePrice($month, $tonnage, $type);
+                Yii::$app->response->setStatusCode(204, 'Price deleted successfully');
 
-                $monthRecord = MonthDAO::read($month);
-                $typeRecord = TypeDAO::read($type);
-                $tonnageRecord = TonnageDAO::read($tonnage);
-
-                if ($monthRecord === false || $tonnageRecord === false || $typeRecord === false) {
-                    throw new NotFoundHttpException('Стоимость для выбранных параметров отсутствует');
-                }
-
-                $priceRecord = PriceDAO::read($monthRecord['id'], $typeRecord['id'], $tonnageRecord['id']);
-
-                if ($priceRecord === false) {
-                    throw new NotFoundHttpException('Стоимость для выбранных параметров отсутствует');
-                }
-
-                PriceDAO::remove($monthRecord['id'], $tonnageRecord['id'], $typeRecord['id']);
-                Yii::$app->response->setStatusCode(204, 'Успешное удаление');
-
-                return ['message' => 'Успешное удаление'];
+                return ['message' => 'Price deleted successfully'];
             }
         }
 

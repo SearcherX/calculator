@@ -3,19 +3,22 @@
 namespace app\controllers\api\v2;
 
 use app\components\filters\TokenAuthMiddleware;
-use app\services\DAOUtils;
-use app\services\MonthDAO;
+use app\services\MonthService;
 use Yii;
-use yii\db\Query;
 use yii\filters\VerbFilter;
 use yii\rest\Controller;
-use yii\web\BadRequestHttpException;
-use yii\web\NotFoundHttpException;
-use yii\web\Response;
 
 class MonthController extends Controller
 {
     public $enableCsrfValidation = false;
+    private MonthService $monthService;
+
+    public function __construct($id, $module, MonthService $monthService, $config = [])
+    {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $this->monthService = $monthService;
+        parent::__construct($id, $module, $config);
+    }
 
     public function behaviors()
     {
@@ -29,12 +32,6 @@ class MonthController extends Controller
                     ],
                 ]
             ],
-            'contentNegotiator' => [
-                'class' => 'yii\filters\ContentNegotiator',
-                'formats' => [
-                    'application/json' => Response::FORMAT_JSON,
-                ]
-            ]
         ];
     }
 
@@ -45,39 +42,25 @@ class MonthController extends Controller
         switch ($request->method) {
             case 'GET':
             {
-                $rows = MonthDAO::readAll();
-                return DAOUtils::mapToString($rows, 'name');
+                return $this->monthService->getAllMonths();
             }
 
             case 'POST':
             {
                 $month = $request->post('month');
-                $isMonthExists = MonthDAO::read($month) !== false;
+                $this->monthService->addMonth($month);
+                Yii::$app->response->setStatusCode(201, 'Month added successfully');
 
-                if ($isMonthExists) {
-                    throw new BadRequestHttpException('Месяц уже существует');
-                }
-
-                MonthDAO::add($month);
-                Yii::$app->response->setStatusCode(201, 'Успешное добавление');
-                Yii::$app->response->content = '';
-
-                return;
+                return ['message' => 'Month added successfully'];
             }
 
             case 'DELETE':
             {
                 $month = $request->get('id');
-                $isMonthExists = MonthDAO::read($month) !== false;
+                $this->monthService->deleteMonth($month);
+                Yii::$app->response->setStatusCode(204, 'Month deleted successfully');
 
-                if (!$isMonthExists) {
-                    throw new NotFoundHttpException('Месяц не найден');
-                }
-
-                MonthDAO::remove($month);
-                Yii::$app->response->setStatusCode(204, 'Успешное удаление');
-
-                return ['message' => 'Успешное удаление'];
+                return ['message' => 'Month deleted successfully'];
             }
         }
 
