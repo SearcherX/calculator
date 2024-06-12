@@ -2,19 +2,23 @@
 namespace app\controllers\api\v2;
 
 use app\components\filters\TokenAuthMiddleware;
-use app\services\DAOUtils;
-use app\services\TonnageDAO;
+use app\services\TonnageService;
 use Yii;
-use yii\db\Query;
 use yii\filters\VerbFilter;
 use yii\rest\Controller;
-use yii\web\BadRequestHttpException;
-use yii\web\NotFoundHttpException;
 use yii\web\Response;
 
 class TonnageController extends Controller
 {
     public $enableCsrfValidation = false;
+    private TonnageService $tonnageService;
+
+    public function __construct($id, $module, TonnageService $tonnageService, $config = [])
+    {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $this->tonnageService = $tonnageService;
+        parent::__construct($id, $module, $config);
+    }
 
     public function behaviors()
     {
@@ -41,39 +45,25 @@ class TonnageController extends Controller
     {
         $request = Yii::$app->request;
 
-        switch ($request->method) {
+        switch ($request->getMethod()) {
             case 'GET': {
-                $rows = TonnageDAO::readAll();
-
-                return DAOUtils::mapToString($rows, 'value');
+                return $this->tonnageService->getAllTonnages();
             }
 
             case 'POST': {
                 $tonnage = $request->post('tonnage');
-                $isTonnageExists = TonnageDAO::read($tonnage) !== false;
+                $this->tonnageService->addTonnage($tonnage);
+                Yii::$app->response->setStatusCode(201, 'Tonnage added successfully');
 
-                if ($isTonnageExists) {
-                    throw new BadRequestHttpException('Тоннаж уже существует');
-                }
-
-                TonnageDAO::add($tonnage);
-                Yii::$app->response->setStatusCode(201, 'Успешное добавление');
-
-                return ['message' => 'Успешное добавление'];
+                return ['message' => 'Tonnage added successfully'];
             }
 
             case 'DELETE': {
                 $tonnage = $request->get('id');
-                $isTonnageExists = TonnageDAO::read($tonnage) !== false;
+                $this->tonnageService->deleteTonnage($tonnage);
+                Yii::$app->response->setStatusCode(204, 'Tonnage deleted successfully');
 
-                if (!$isTonnageExists) {
-                    throw new NotFoundHttpException('Тоннаж не найден');
-                }
-
-                TonnageDAO::remove($tonnage);
-                Yii::$app->response->setStatusCode(204, 'Успешное удаление');
-
-                return ['message' => 'Успешное удаление'];
+                return ['message' => 'Tonnage deleted successfully'];
             }
         }
 
