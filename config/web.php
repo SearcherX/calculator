@@ -9,18 +9,10 @@ return [
     'id' => 'basic',
     'name' => 'Калькулятор',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'mvc'],
-    'modules' => [
-        'api' => [
-            'class' => 'app\modules\api\Module'
-        ],
-        'mvc' => [
-            'class' => 'app\modules\mvc\Module'
-        ]
-    ],
+    'bootstrap' => ['log'],
     'layout' => 'main',
     'language' => 'ru',
-    'defaultRoute' => 'site/index',
+    'defaultRoute' => 'calculator/index',
     'container' => [
         'singletons' => [
             \app\repositories\interfaces\MonthRepositoryInterface::class => \app\repositories\SqlMonthRepository::class,
@@ -35,9 +27,6 @@ return [
     ],
     'components' => [
         'db' => require __DIR__ . '/db.php',
-        'authManager' => [
-            'class' => 'yii\rbac\DbManager',
-        ],
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
             'parsers' => ['application/json'  => JsonParser::class]
@@ -56,9 +45,9 @@ return [
         'cache' => [
             'class' => yii\caching\FileCache::class,
         ],
-        'errorHandler' => [
-            'errorAction' => \app\components\ErrorHandler::class,
-        ],
+//        'errorHandler' => [
+//            'errorAction' => \app\components\ErrorHandler::class,
+//        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -75,8 +64,7 @@ return [
                 'api/v2/months' => 'api/v2/month/index',
                 'api/v2/tonnages' => 'api/v2/tonnage/index',
                 'api/v2/types' => 'api/v2/type/index',
-                'api/v2/prices' => 'api/v2/price/index',
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['api\v2\months', 'api\v2\tonnage', 'api\v2\type', 'api\v2\price']]
+                'api/v2/prices' => 'api/v2/price/index'
             ],
         ],
     ],

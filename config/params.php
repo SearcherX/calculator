@@ -5,5 +5,5 @@ return [
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
     'lists' => require_once 'lists.php',
-    'prices' => require_once 'prices.php'
+    'prices' => require_once 'prices.php',
 ];

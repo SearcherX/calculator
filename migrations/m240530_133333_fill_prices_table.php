@@ -12,13 +12,20 @@ class m240530_133333_fill_prices_table extends Migration
      */
     public function safeUp()
     {
-        $months = $this->getDb()->createCommand('SELECT * FROM months')->queryAll();
-        $tonnages = $this->getDb()->createCommand('SELECT * FROM tonnages')->queryAll();
-        $types = $this->getDb()->createCommand('SELECT * FROM raw_types')->queryAll();
-        $prices = Yii::$app->params['prices'];
-        $columns = ['price', 'month_id', 'tonnage_id', 'raw_type_id'];
-        $rows = \app\helpers\DAOMapper::toRecords($prices, $months, $tonnages, $types);
-        $this->batchInsert('prices', $columns, $rows);
+        $this->execute("
+        INSERT INTO prices (tonnage_id, month_id, raw_type_id, price)
+SELECT
+    t.id AS tonnage_id,
+    m.id AS month_id,
+    r.id AS raw_type_id,
+    FLOOR(100 + RAND() * 100) AS price -- генерируем случайное значение цены в диапазоне от 100 до 200
+FROM
+    tonnages t
+JOIN
+    months m
+JOIN
+    raw_types r;
+        ");
     }
 
     /**

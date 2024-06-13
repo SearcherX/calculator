@@ -2,7 +2,6 @@
 
 namespace app\services;
 
-use app\helpers\DAOMapper;
 use app\repositories\interfaces\TonnageRepositoryInterface;
 use yii\web\BadRequestHttpException;
 use yii\web\NotFoundHttpException;

@@ -43,9 +43,7 @@ class SqlPriceRepository implements PriceRepositoryInterface
         return Yii::$app->db->createCommand('
             INSERT INTO prices (price, month_id, tonnage_id, raw_type_id)
             SELECT :price, m.id, t.id, rt.id
-            FROM months m
-            JOIN tonnages t
-            JOIN raw_types rt
+            FROM months m, tonnages t, raw_types rt
             WHERE m.name = :month AND t.value = :tonnage AND rt.name = :type
             AND NOT EXISTS(
                 SELECT month_id, tonnage_id, raw_type_id
@@ -58,6 +56,7 @@ class SqlPriceRepository implements PriceRepositoryInterface
             ':tonnage' => $tonnage,
             ':type' => $type
         ])->execute();
+
     }
 
     public function updatePrice(string $month, int $tonnage, string $type, int $price): int
