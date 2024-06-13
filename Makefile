@@ -50,31 +50,3 @@ yii-migrate:
 
 yii-migration-create:
 	@docker-compose -p calculator run --rm php-fpm php ./yii migrate/create $(name)
-
-spa-install:
-	@docker build --target=node \
-	--build-arg USER=1000 \
-	--build-arg GROUP=1000 \
-	-t localhost/calculator-spa:latest -f ./docker/Dockerfile .
-	@docker run --rm -v $(PWD)/frontend:/app localhost/calculator-spa:latest yarn install
-
-spa-build:
-	@docker run --rm -v $(PWD)/frontend:/app -v $(PWD)/web:/app-web \
-		-e API_AUTH_KEY=${X_API_KEY} \
-		-e API_BASE_URL=${API_BASE_URL} \
-	localhost/calculator-spa:latest yarn run build
-
-spa-dev-up:
-	@$(MAKE) -s up
-	@docker run --rm -d -v $(PWD)/frontend:/app -v $(PWD)/web:/app-web \
-		--name calculator-spa-dev \
-		-p 3000:5173 \
-		-e API_AUTH_KEY=${X_API_KEY} \
-		-e API_BASE_URL=${API_BASE_URL} \
-		localhost/calculator-spa:latest yarn run dev && \
-	echo "\033[0;32mSPA приложение запущено в режиме разработки по адресу http://localhost:3000\033[0m\n\033[0;33mПо готовности доработок завершите режим разработки командой make spa-dev-down\033[0m"
-
-spa-dev-down:
-	@$(MAKE) -s down
-	@docker stop calculator-spa-dev && \
-	echo "\033[0;32mРежим разработки SPA приложения остановлен.\033[0m\n\033[0;33mДля сборки production-ready SPA приложения выполните команду make spa-build\033[0m"
