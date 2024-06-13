@@ -6,14 +6,22 @@ $params = require __DIR__ . '/params.php';
 return [
     'id' => 'basic-console',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log', 'mvc'],
     'controllerNamespace' => 'app\commands',
+    'modules' => [
+        'mvc' => [
+            'class' => 'app\modules\mvc\Module'
+        ]
+    ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
         'db' => require __DIR__ . '/db.php',
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
