@@ -9,10 +9,18 @@ return [
     'id' => 'basic',
     'name' => 'Калькулятор',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log', 'mvc'],
+    'modules' => [
+        'api' => [
+            'class' => 'app\modules\api\Module'
+        ],
+        'mvc' => [
+            'class' => 'app\modules\mvc\Module'
+        ]
+    ],
     'layout' => 'main',
     'language' => 'ru',
-    'defaultRoute' => 'calculator/index',
+    'defaultRoute' => 'site/index',
     'container' => [
         'singletons' => [
             \app\repositories\interfaces\MonthRepositoryInterface::class => \app\repositories\SqlMonthRepository::class,
@@ -27,6 +35,14 @@ return [
     ],
     'components' => [
         'db' => require __DIR__ . '/db.php',
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'loginUrl' => ['user/login'],
+            'enableAutoLogin' => false,
+        ],
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
             'parsers' => ['application/json'  => JsonParser::class]
@@ -45,9 +61,9 @@ return [
         'cache' => [
             'class' => yii\caching\FileCache::class,
         ],
-//        'errorHandler' => [
-//            'errorAction' => \app\components\ErrorHandler::class,
-//        ],
+        'errorHandler' => [
+            'errorAction' => \app\components\ErrorHandler::class,
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -64,7 +80,8 @@ return [
                 'api/v2/months' => 'api/v2/month/index',
                 'api/v2/tonnages' => 'api/v2/tonnage/index',
                 'api/v2/types' => 'api/v2/type/index',
-                'api/v2/prices' => 'api/v2/price/index'
+                'api/v2/prices' => 'api/v2/price/index',
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['api\v2\months', 'api\v2\tonnage', 'api\v2\type', 'api\v2\price']]
             ],
         ],
     ],

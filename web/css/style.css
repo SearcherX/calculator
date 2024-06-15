@@ -8,3 +8,30 @@
 td.with-border {
     border: 4px solid green !important;
 }
+
+.bg-blue, .dropdown-item, .nav-link {
+    background-color: #3A8DB7 !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+    border-width: 0 !important;
+}
+
+header .nav-link {
+    color: white !important;
+    padding: 1rem;
+}
+
+header .nav-item:hover > .nav-link,
+header .dropdown-item:hover {
+    background-color: #2C6687 !important;
+}
+
+.menu-container {
+    padding: 0 !important;
+}
