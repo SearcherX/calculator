@@ -2,6 +2,7 @@
 
 namespace app\services;
 
+use app\helpers\DAOMapper;
 use app\repositories\interfaces\TypeRepositoryInterface;
 use yii\web\BadRequestHttpException;
 use yii\web\NotFoundHttpException;

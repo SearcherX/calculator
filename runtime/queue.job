@@ -6,3 +6,19 @@ month => февраль
 tonnage => 100
 raw_type => соя
 ...
+month => февраль
+tonnage => 50
+raw_type => шрот
+...
+month => февраль
+tonnage => 50
+raw_type => шрот
+...
+month => февраль
+tonnage => 25
+raw_type => соя
+...
+month => февраль
+tonnage => 25
+raw_type => шрот
+...

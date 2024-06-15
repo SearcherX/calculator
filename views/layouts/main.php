@@ -1,5 +1,7 @@
 <?php
 use app\assets\AppAsset;
+use yii\bootstrap5\Nav;
+use yii\bootstrap5\NavBar;
 use yii\helpers\Html;
 
 AppAsset::register($this);
@@ -9,7 +11,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 
 <head>
-    <title>Калькулятор</title>
+    <title><?= Html::encode($this->title) ?></title>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <?php $this->registerCsrfMetaTags() ?>
@@ -21,11 +23,42 @@ AppAsset::register($this);
 <header id="header">
     <nav id="w0" class="navbar-expand-md navbar-dark bg-dark navbar">
         <div class="container">
-            <a href="/" class="navnar-brand">
+            <a href="/" class="navbar-brand">
                 <?= Html::img('@web/img/logo.png', ['class' => 'logo', 'alt' => 'ЭФКО'])?>
             </a>
         </div>
     </nav>
+
+    <div class="container-fluid bg-blue">
+        <?php
+        NavBar::begin([
+            'brandLabel' => Html::tag('div', '', ['class' => 'logo']),
+            'brandUrl' => Yii::$app->homeUrl,
+            'options' => ['class' => 'navbar-expand-md menu-container'],
+            'containerOptions' => ['class' => ' justify-content-end ']
+        ]);
+
+        $items = [
+            ['label' => 'Главная', 'url' => ['/site']],
+            ['label' => 'Войти в систему', 'url' => ['/user/login'], 'visible' => Yii::$app->user->isGuest],
+            Yii::$app->user->isGuest ? '' : ['label' => Yii::$app->user->identity->firstName,
+                'items' => [
+                    ['label' => 'Профиль', 'url' => ['/user/profile?id=' . Yii::$app->user->id]],
+                    ['label' => 'История расчётов', 'url' => ['/history/index']],
+                    ['label' => 'Пользователи', 'url' => ['/admin/user'], 'visible' => Yii::$app->user->can('administrator')],
+                    ['label' => 'Выход', 'url' => ['/user/logout'], 'linkOptions' => ['data-method' => 'post']],
+                ],
+                'visible' => Yii::$app->user->isGuest === false
+            ]
+        ];
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-right d-flex gap-3'],
+            'items' => $items
+        ]);
+        NavBar::end();
+        ?>
+    </div>
+
 </header>
 
 <?= $content ?>
