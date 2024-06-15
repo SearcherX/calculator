@@ -27,6 +27,10 @@ class TokenAuthMiddleware extends ActionFilter
             throw new UnauthorizedHttpException('Авторизация не выполнена');
         }
 
+        if (Yii::$app->getRequest()->getMethod() === 'OPTIONS') {
+            return true;
+        }
+
         return true;
     }
 }

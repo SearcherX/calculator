@@ -2,39 +2,113 @@
 
 namespace app\controllers;
 
+use app\helpers\RenderHelper;
+use app\helpers\Utils;
 use app\models\CalculatorForm;
+use app\services\MonthService;
+use app\services\PriceService;
+use app\services\TonnageService;
+use app\services\TypeService;
+use Dotenv\Dotenv;
 use Yii;
 use yii\web\Controller;
-
-const PROJECT_ROOT = __DIR__ . "/../";
-include_once PROJECT_ROOT . "utils/utils.php";
+use yii\web\NotFoundHttpException;
+use yii\web\Response;
+use yii\widgets\ActiveForm;
 
 class CalculatorController extends Controller
 {
+    private MonthService $monthService;
+    private TonnageService $tonnageService;
+    private TypeService $typeService;
+    private PriceService $priceService;
+
+    /**
+     * @param $id
+     * @param $module
+     * @param MonthService $monthService
+     * @param TonnageService $tonnageService
+     * @param TypeService $typeService
+     * @param PriceService $priceService
+     * @param array $config
+     */
+    public function __construct(
+        $id,
+        $module,
+        MonthService $monthService,
+        TonnageService $tonnageService,
+        TypeService $typeService,
+        PriceService $priceService,
+        $config = []
+    )
+    {
+        $this->monthService = $monthService;
+        $this->tonnageService = $tonnageService;
+        $this->typeService = $typeService;
+        $this->priceService = $priceService;
+        parent::__construct($id, $module, $config);
+    }
+
+
     public function actionIndex()
     {
-        global $lists, $prices;
-        $form_model = new CalculatorForm();
-        $monthsList = getDropDownArray(Yii::$app->params['lists']['months']);
-        $tonnagesList = getDropDownArray(Yii::$app->params['lists']['tonnages']);
-        $raw_typesList = getDropDownArray(Yii::$app->params['lists']['raw_types']);
+        $dotenv = Dotenv::createImmutable(Yii::getAlias("@app"));
+        $dotenv->load();
 
-        if (empty(Yii::$app->request->post()) === false) {
-            $basePath = Yii::getAlias('@runtime') . '/queue.job';
-
-            foreach (Yii::$app->request->post()['CalculatorForm'] as $key => $value) {
-                file_put_contents($basePath, "$key => $value" . PHP_EOL, FILE_APPEND);
-            }
-
-            file_put_contents($basePath, "..." . PHP_EOL, FILE_APPEND);
+        if ($_ENV['RENDER_MODE'] === 'SPA') {
+            return require_once \Yii::getAlias("@app/web/index.html");
         }
 
-        return $this->render('calculator', compact(
-            'form_model',
-            'monthsList',
-            'tonnagesList',
-            'raw_typesList'
-        ));
+        $formModel = new CalculatorForm();
+        $monthsList = RenderHelper::getDropDownArray($this->monthService->getAllMonths());
+        $tonnagesList = RenderHelper::getDropDownArray($this->tonnageService->getAllTonnages());
+        $typesList = RenderHelper::getDropDownArray($this->typeService->getAllTypes());
+
+        if ($formModel->load(Yii::$app->request->post()) && Yii::$app->request->isAjax) {
+            try {
+                $price = $this->priceService->getByMonthAndTonnageAndType(
+                    $formModel->month,
+                    $formModel->tonnage,
+                    $formModel->raw_type
+                );
+                $prices = $this->priceService->getPriceByType($formModel->raw_type);
+            } catch (NotFoundHttpException $e) {
+                return $this->renderAjax('error', [
+                    'message' => $e->getMessage()
+                ]);
+            }
+
+            $tonnagesHead = RenderHelper::getTonnages($prices);
+
+            return $this->renderAjax('result', [
+                'form_model' => $formModel,
+                'price' => $price,
+                'headTableTM' => $tonnagesHead,
+                'bodyTableTM' => $prices,
+            ]);
+        }
+
+        return $this->render('calculator', [
+            'model' => $formModel,
+            'months' => $monthsList,
+            'tonnages' => $tonnagesList,
+            'types' => $typesList
+        ]);
+    }
+
+    public function actionValidate()
+    {
+        $model = new CalculatorForm();
+
+        if (Yii::$app->request->isAjax) {
+            if (empty(Yii::$app->request->post()) === false) {
+                $model->load(Yii::$app->request->post());
+            }
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            return ActiveForm::validate($model);
+        }
+
+        return null;
     }
 
 }
