@@ -2,6 +2,7 @@
 
 namespace app\commands;
 
+use app\rules\IsOwnerRule;
 use Yii;
 use yii\console\Controller;
 
@@ -11,6 +12,11 @@ class RbacController extends Controller
     {
         $auth = Yii::$app->authManager;
 
+        //правила
+        $ownerRule = new IsOwnerRule();
+        $auth->add($ownerRule);
+
+        //роли
         $user = $auth->createRole('user');
         $user->description = 'пользователь';
         $auth->add($user);
@@ -19,13 +25,28 @@ class RbacController extends Controller
         $admin->description = 'администратор';
         $auth->add($admin);
 
-        $viewUser = $auth->createPermission('viewUsers');
-        $viewUser->description = 'Смотреть информацию о пользователях';
+        //разрешения
+        $viewUser = $auth->createPermission('viewProfile');
+        $viewUser->description = 'Смотреть информацию о пользователе';
         $auth->add($viewUser);
 
-        $auth->addChild($admin, $viewUser);
+        $viewHistory = $auth->createPermission('viewHistory');
+        $viewHistory->description = 'Смотреть информацию об истории рассчета';
+        $auth->add($viewHistory);
 
+        $viewOwnHistory = $auth->createPermission('viewOwnHistory');
+        $viewOwnHistory->ruleName = $ownerRule->name;
+        $auth->add($viewOwnHistory);
+
+        //наделение ролей правами
+        $auth->addChild($user, $viewOwnHistory);
+
+        $auth->addChild($admin, $viewUser);
+        $auth->addChild($admin, $viewHistory);
+
+        //наследование прав (иерархия)
         $auth->addChild($admin, $user);
+        $auth->addChild($viewOwnHistory, $viewHistory);
 
         $auth->assign($user, 2);
         $auth->assign($admin, 1);

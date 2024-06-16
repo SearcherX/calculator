@@ -40,8 +40,8 @@ class HistorySearch extends History
 
     public function search($params)
     {
-        $isAdmin = Yii::$app->user->can('viewUsers');
-        $query = $isAdmin ? History::find() : History::find()->where(['user_id' => Yii::$app->user->identity->getId()]);
+        $canViewHistory = Yii::$app->user->can('viewHistory');
+        $query = $canViewHistory ? History::find() : History::find()->where(['user_id' => Yii::$app->user->identity->getId()]);
 
 
         $dataProvider = new ActiveDataProvider([
