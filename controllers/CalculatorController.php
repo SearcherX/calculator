@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\helpers\RenderHelper;
 use app\helpers\Utils;
 use app\models\CalculatorForm;
+use app\models\History;
 use app\services\MonthService;
 use app\services\PriceService;
 use app\services\TonnageService;
@@ -49,6 +50,14 @@ class CalculatorController extends Controller
         parent::__construct($id, $module, $config);
     }
 
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
 
     public function actionIndex()
     {
@@ -79,6 +88,12 @@ class CalculatorController extends Controller
             }
 
             $tonnagesHead = RenderHelper::getTonnages($prices);
+
+            if (Yii::$app->user->isGuest === false) {
+//                $model->saveToQueue();
+                $history = new History();
+                $history->snapshot($formModel, $price, $prices);
+            };
 
             return $this->renderAjax('result', [
                 'form_model' => $formModel,

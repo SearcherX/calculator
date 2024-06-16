@@ -45,8 +45,8 @@ class SignupForm extends Model
 
             // нужно добавить следующие три строки:
             $auth = Yii::$app->authManager;
-            $authorRole = $auth->getRole('user');
-            $auth->assign($authorRole, $user->getId());
+            $userRole = $auth->getRole('user');
+            $auth->assign($userRole, $user->getId());
 
             return $user;
         }

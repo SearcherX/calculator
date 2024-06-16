@@ -1,5 +1,6 @@
 <?php
 
+use yii\web\ErrorHandler;
 use yii\web\JsonParser;
 use yii\web\Response;
 
@@ -41,28 +42,17 @@ return [
         'user' => [
             'identityClass' => 'app\models\User',
             'loginUrl' => ['user/login'],
-            'enableAutoLogin' => false,
+            'enableAutoLogin' => true,
         ],
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
             'parsers' => ['application/json'  => JsonParser::class]
         ],
-        'response' => [
-            'class' => Response::class,
-            'on beforeSend' => function ($event) {
-                $response = $event->sender;
-                if ($response->statusCode === 400 || $response->statusCode === 401 || $response->statusCode === 404) {
-                    $response->data = [
-                        'message' => $response->data['message'],
-                    ];
-                }
-            },
-        ],
         'cache' => [
             'class' => yii\caching\FileCache::class,
         ],
         'errorHandler' => [
-            'errorAction' => \app\components\ErrorHandler::class,
+            'errorAction' => 'calculator/error',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
