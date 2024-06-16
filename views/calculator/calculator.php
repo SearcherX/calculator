@@ -5,6 +5,18 @@ use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
 ?>
+<?php if (Yii::$app->session->hasFlash('success-login')): ?>
+<?php $arr = array_reverse(Yii::$app->authManager->getRolesByUser(Yii::$app->user->getId())) ?>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Здравствуйте, <?= array_pop($arr)->description ?>&nbsp
+        <strong><?= Yii::$app->session->getFlash('success-login') ?></strong>, вы авторизовались в системе
+        расчета стоимости доставки. Теперь все ваши расчеты будут сохранены для последующего просмотра в
+        <a href="/history" class="link-primary">журнале расчетов</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+<?php endif; ?>
 
 <main class="main flex-shrink-0" role="main" ">
 <div class=" container " id="main-block">

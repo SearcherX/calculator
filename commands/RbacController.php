@@ -12,17 +12,20 @@ class RbacController extends Controller
         $auth = Yii::$app->authManager;
 
         $user = $auth->createRole('user');
+        $user->description = 'пользователь';
         $auth->add($user);
 
         $admin = $auth->createRole('admin');
+        $admin->description = 'администратор';
         $auth->add($admin);
 
-        $readHistory = $auth->createPermission('readHistory');
-        $readHistory->description = 'Read history of calculations';
-        $auth->add($readHistory);
+        $viewUser = $auth->createPermission('viewUsers');
+        $viewUser->description = 'Смотреть информацию о пользователях';
+        $auth->add($viewUser);
 
-        $auth->addChild($admin, $readHistory);
-        $auth->addChild($user, $readHistory);
+        $auth->addChild($admin, $viewUser);
+
+        $auth->addChild($admin, $user);
 
         $auth->assign($user, 2);
         $auth->assign($admin, 1);

@@ -15,7 +15,7 @@ class UserController extends Controller
     {
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            Yii::$app->session->setFlash('success-login');
+            Yii::$app->session->setFlash('success-login', Yii::$app->user->identity->firstName, false);
             return $this->redirect('/calculator');
         }
 

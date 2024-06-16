@@ -15,7 +15,7 @@ class m240614_080746_create_users_table extends Migration
         $this->execute("
             CREATE TABLE users (
                 id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                username VARCHAR(40) NOT NULL,
+                firstName VARCHAR(40) NOT NULL,
                 email VARCHAR(255) NOT NULL UNIQUE,
                 password_hash VARCHAR(255) NOT NULL,
                 status SMALLINT UNSIGNED NOT NULL DEFAULT 10,
