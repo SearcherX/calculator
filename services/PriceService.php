@@ -3,6 +3,7 @@
 namespace app\services;
 
 use app\helpers\DAOMapper;
+use app\helpers\RenderHelper;
 use app\repositories\interfaces\PriceRepositoryInterface;
 use yii\web\BadRequestHttpException;
 use yii\web\NotFoundHttpException;
@@ -30,7 +31,10 @@ class PriceService
             throw new NotFoundHttpException('Raw type not found');
         }
 
-        return DAOMapper::toTable($rows);
+        $data = DAOMapper::getMonthsAndTonnagesFromRecords($rows);
+        $emptyPrices = DAOMapper::createEmptyPrices($data['months'], $data['tonnages']);
+
+        return DAOMapper::toTable($rows, $emptyPrices);
     }
 
     public function getByMonthAndTonnageAndType(string $month, int $tonnage, string $type): int
