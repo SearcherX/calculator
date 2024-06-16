@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\helpers\DAOMapper;
 use app\helpers\RenderHelper;
 use app\helpers\Utils;
 use app\models\CalculatorForm;
@@ -87,16 +88,15 @@ class CalculatorController extends Controller
                 ]);
             }
 
-            $tonnagesHead = RenderHelper::getTonnages($prices);
+            $tonnagesHead = DAOMapper::getTonnagesFromTable($prices);
 
             if (Yii::$app->user->isGuest === false) {
-//                $model->saveToQueue();
                 $history = new History();
                 $history->snapshot($formModel, $price, $prices);
             };
 
             return $this->renderAjax('result', [
-                'form_model' => $formModel,
+                'model' => $formModel,
                 'price' => $price,
                 'headTableTM' => $tonnagesHead,
                 'bodyTableTM' => $prices,

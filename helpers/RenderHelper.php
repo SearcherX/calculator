@@ -4,25 +4,9 @@ namespace app\helpers;
 
 class RenderHelper
 {
-    public static function getTonnages(array $table): array
-    {
-        $res = [];
-
-        foreach ($table as $tonnagesPrices) {
-            foreach ($tonnagesPrices as $tonnage => $price) {
-                if (in_array($tonnage, $res) === false) {
-                    $res[] = $tonnage;
-                }
-            }
-        }
-
-        sort($res);
-        return $res;
-    }
-
     public static function getBorderClass($month, $tonnage, $postMonth, $postTonnage): string
     {
-        if ($month === $postMonth && $tonnage === (int)$postTonnage) {
+        if (mb_strtolower($month) === mb_strtolower($postMonth) && (int)$tonnage === (int)$postTonnage) {
             return 'with-border';
         }
 
