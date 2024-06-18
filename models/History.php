@@ -3,7 +3,6 @@
 namespace app\models;
 
 use Yii;
-use yii\data\ActiveDataProvider;
 use yii\db\ActiveRecord;
 
 /**
@@ -21,6 +20,7 @@ class History extends ActiveRecord
     {
         return '{{histories}}';
     }
+
     public function rules()
     {
         return [
@@ -48,12 +48,14 @@ class History extends ActiveRecord
 
     public function snapshot(CalculatorForm $model, int $price, array $prices)
     {
-        $this->month = $model->month;
-        $this->tonnage = $model->tonnage;
-        $this->raw_type = $model->raw_type;
-        $this->price = $price;
-        $this->table_data = json_encode($prices);
-        $this->link('user', Yii::$app->user->identity);
+        if (!Yii::$app->user->isGuest) {
+            $this->month = $model->month;
+            $this->tonnage = $model->tonnage;
+            $this->raw_type = $model->raw_type;
+            $this->price = $price;
+            $this->table_data = json_encode($prices);
+            $this->link('user', Yii::$app->user->identity);
+        }
     }
 
 }

@@ -8,7 +8,7 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>" class="h-100">
+<html lang="<?= Yii::$app->language ?>" class="h-100 overflow-y-auto overflow-x-hidden">
 
 <head>
     <title><?= Html::encode($this->title) ?></title>
@@ -42,11 +42,11 @@ AppAsset::register($this);
             ['label' => 'Главная', 'url' => ['/']],
             ['label' => 'Расчет доставки', 'url' => ['/calculator']],
             ['label' => 'Войти в систему', 'url' => ['/user/login'], 'visible' => Yii::$app->user->isGuest],
-            Yii::$app->user->isGuest ? '' : ['label' => Yii::$app->user->identity->firstName,
+            Yii::$app->user->isGuest ? '' : ['label' => Yii::$app->user->identity->username,
                 'items' => [
                     ['label' => 'Профиль', 'url' => ['/user/profile?id=' . Yii::$app->user->id]],
-                    ['label' => 'История расчётов', 'url' => ['/history/index']],
-                    ['label' => 'Пользователи', 'url' => ['/admin/user'], 'visible' => Yii::$app->user->can('administrator')],
+                    ['label' => 'История расчётов', 'url' => ['/history']],
+                    ['label' => 'Пользователи', 'url' => ['/admin/user'], 'visible' => Yii::$app->user->can('viewProfile')],
                     ['label' => 'Выход', 'url' => ['/user/logout'], 'linkOptions' => ['data-method' => 'post']],
                 ],
                 'visible' => Yii::$app->user->isGuest === false

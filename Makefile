@@ -48,6 +48,17 @@ yii-run:
 yii-migrate:
 	@docker-compose -p calculator run --rm php-fpm php ./yii migrate
 
+yii-rbac-migrate:
+	@docker-compose -p calculator run --rm php-fpm php ./yii migrate --migrationPath=@yii/rbac/migrations
+
+yii-rbac-init:
+	@docker-compose -p calculator run --rm php-fpm php ./yii rbac/init
+
+yii-migrate-all:
+	@$(MAKE) -s yii-rbac-migrate
+	@$(MAKE) -s yii-rbac-init
+	@$(MAKE) -s yii-migrate
+
 yii-migration-create:
 	@docker-compose -p calculator run --rm php-fpm php ./yii migrate/create $(name)
 

@@ -5,7 +5,7 @@
 <div>
     <div class="mb-2">
         <?php if (Yii::$app->user->can('viewHistory')): ?>
-            <p>Имя пользователя: <?= $model->user->firstName ?></p>
+            <p>Имя пользователя: <?= $model->user->username ?></p>
             <p>Email: <?= $model->user->email ?></p>
         <?php endif; ?>
 
