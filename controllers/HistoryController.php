@@ -19,15 +19,10 @@ class HistoryController extends Controller
                 'class' => AccessControl::class,
                 'rules' => [
                     [
-                        'actions' => ['index', 'view'],
+                        'actions' => ['index', 'view', 'delete'],
                         'allow' => true,
                         'roles' => ['@']
                     ],
-                    [
-                        'actions' => ['delete'],
-                        'allow' => true,
-                        'roles' => ['admin']
-                    ]
                 ]
             ]
         ];

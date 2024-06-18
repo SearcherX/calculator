@@ -1,5 +1,6 @@
 <?php
 
+use app\helpers\DAOMapper;
 use yii\db\Migration;
 
 /**
@@ -12,9 +13,9 @@ class m240530_133350_fill_raw_types_table extends Migration
      */
     public function safeUp()
     {
-        $this->execute("
-        INSERT INTO raw_types (name) VALUES ('шрот'), ('соя'), ('жмых');
-        ");
+        $months = Yii::$app->params['lists']['raw_types'];
+        $rows = DAOMapper::toRecords($months, 'name');
+        $this->batchInsert('raw_types', ['name'], $rows);
     }
 
     /**

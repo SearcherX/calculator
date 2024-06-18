@@ -17,6 +17,15 @@ return [
         ],
         'mvc' => [
             'class' => 'app\modules\mvc\Module'
+        ],
+        'admin' => [
+            'class' => 'mdm\admin\Module',
+            'layout' => 'left-menu',
+            'mainLayout' => '@app/views/layouts/main.php'
+        ],
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['172.18.0.1']
         ]
     ],
     'layout' => 'main',
@@ -32,7 +41,8 @@ return [
     ],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
+        '@mdm/admin' => '@vendor/mdmsoft'
     ],
     'components' => [
         'db' => require __DIR__ . '/db.php',
@@ -46,7 +56,7 @@ return [
         ],
         'request' => [
             'cookieValidationKey' => 'sF6ugQqWMYrNL4Q',
-            'parsers' => ['application/json'  => JsonParser::class]
+            'parsers' => ['application/json' => JsonParser::class]
         ],
         'cache' => [
             'class' => yii\caching\FileCache::class,
@@ -74,6 +84,16 @@ return [
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['api\v2\months', 'api\v2\tonnage', 'api\v2\type', 'api\v2\price']]
             ],
         ],
+    ],
+    'as access' => [
+        'class' => 'mdm\admin\components\AccessControl',
+        'allowActions' => [
+            'calculator/*',
+            'user/login',
+            'user/signup',
+            'api/*',
+            'swagger-ui/*'
+        ]
     ],
     'params' => $params,
 ];

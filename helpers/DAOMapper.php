@@ -86,10 +86,21 @@ class DAOMapper
         throw new \Exception("Value {$value} doesn't exists in array");
     }
 
+    public static function toRecords(array $arr, string $fieldName): array
+    {
+        $res = [];
+
+        foreach ($arr as $item) {
+            $res[] = [$fieldName => $item];
+        }
+
+        return $res;
+    }
+
     /**
      * @throws \Exception
      */
-    public static function toRecords(array $arr, array $months, array $tonnages, array $types): array
+    public static function toPriceRecords(array $arr, array $months, array $tonnages, array $types): array
     {
         $records = [];
 
