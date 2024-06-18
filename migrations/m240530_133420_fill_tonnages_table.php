@@ -1,5 +1,6 @@
 <?php
 
+use app\helpers\DAOMapper;
 use yii\db\Migration;
 
 /**
@@ -12,9 +13,9 @@ class m240530_133420_fill_tonnages_table extends Migration
      */
     public function safeUp()
     {
-        $this->execute("
-        INSERT INTO tonnages (value) VALUES (25), (50), (75), (100)
-        ");
+        $months = Yii::$app->params['lists']['tonnages'];
+        $rows = DAOMapper::toRecords($months, 'value');
+        $this->batchInsert('tonnages', ['value'], $rows);
     }
 
     /**

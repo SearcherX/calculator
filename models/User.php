@@ -8,7 +8,7 @@ use yii\web\IdentityInterface;
 
 /**
  * @property int $id
- * @property string $firstName
+ * @property string $username
  * @property string $email
  * @property string $password_hash
  * @property int $status
@@ -19,11 +19,6 @@ class User extends ActiveRecord implements IdentityInterface
     const STATUS_DELETED = 0;
     const STATUS_ACTIVE = 10;
     const STATUS_INACTIVE = 5;
-
-    public static function tableName()
-    {
-        return '{{users}}';
-    }
 
     public function rules()
     {
@@ -87,6 +82,20 @@ class User extends ActiveRecord implements IdentityInterface
     public function validateAuthKey($authKey)
     {
         // TODO: Implement validateAuthKey() method.
+    }
+
+    public function getCalculationsCount()
+    {
+        return History::find()
+            ->where(['user_id' => $this->id])
+            ->count();
+    }
+
+    public function getRegistrationData()
+    {
+        return User::find()->select(['created_at'])
+            ->where(['id' => $this->id])
+            ->scalar();
     }
 
 }

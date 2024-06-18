@@ -12,6 +12,6 @@ class IsOwnerRule extends Rule
      */
     public function execute($user, $item, $params)
     {
-        return isset($params['owner_id']) && $params['owner_id'] === $user;
+        return isset($params['owner_id']) && $params['owner_id'] == $user;
     }
 }

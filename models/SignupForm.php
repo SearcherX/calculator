@@ -7,7 +7,7 @@ use yii\base\Model;
 
 class SignupForm extends Model
 {
-    public $firstName;
+    public $username;
     public $email;
     public $password;
     public $repeatPassword;
@@ -15,8 +15,8 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            [['email' , 'firstName', 'password', 'repeatPassword'], 'required'],
-            ['firstName', 'match', 'pattern' => '/^[a-zA-Z\s]+$/'],
+            [['email' , 'username', 'password', 'repeatPassword'], 'required'],
+            ['username', 'match', 'pattern' => '/^[a-zA-Z\s]+$/'],
 
             ['email', 'unique', 'targetClass' => User::class, 'targetAttribute' => 'email'],
             ['email', 'email'],
@@ -36,7 +36,7 @@ class SignupForm extends Model
     {
         if ($this->validate()) {
             $user = new User();
-            $user->firstName = $this->firstName;
+            $user->username = $this->username;
             $user->email = $this->email;
             $user->status = User::STATUS_ACTIVE;
             $user->password_hash = Yii::$app->security->generatePasswordHash($this->password);
@@ -58,7 +58,7 @@ class SignupForm extends Model
     {
         return [
             'email' => 'E-mail',
-            'firstName' => 'Имя',
+            'username' => 'Имя',
             'password' => 'Пароль',
             'repeatPassword' => 'Повторите пароль',
         ];

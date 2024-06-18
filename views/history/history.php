@@ -8,13 +8,13 @@ $this->title = 'Журнал расчетов';
 ?>
     <main>
         <div class="history">
-            <div class="row">
+            <div class="row px-5">
                 <h2 class="text-center"><?= Html::encode($this->title) ?></h2>
 
                 <?= GridView::widget([
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
-                    'tableOptions' => ['class' => 'table table-bordered  mb-0 table-hover'],
+                    'tableOptions' => ['class' => 'table table-bordered table-hover'],
                     'rowOptions' => ['class' => 'mb3'],
                     'layout' => "{pager}\n{summary}\n{items}",
                     'pager' => [
@@ -35,7 +35,7 @@ $this->title = 'Журнал расчетов';
                             'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
                         ],
                         [
-                            'attribute' => 'user.firstName',
+                            'attribute' => 'user.username',
                             'label' => 'Имя пользователя',
                             'visible' => Yii::$app->user->can('viewProfile'),
                             'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],

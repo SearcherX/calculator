@@ -12,8 +12,8 @@ class m240614_082402_fill_users_table extends Migration
      */
     public function safeUp()
     {
-        $this->batchInsert('users',
-            ['firstName', 'email', 'password_hash', 'status', 'auth_key'], $this->getUserData());
+        $this->batchInsert('user',
+            ['username', 'email', 'password_hash', 'status', 'auth_key'], $this->getUserData());
     }
 
     public function getUserData()

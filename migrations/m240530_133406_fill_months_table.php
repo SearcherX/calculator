@@ -1,5 +1,6 @@
 <?php
 
+use app\helpers\DAOMapper;
 use yii\db\Migration;
 
 /**
@@ -12,11 +13,9 @@ class m240530_133406_fill_months_table extends Migration
      */
     public function safeUp()
     {
-        $this->execute("
-        INSERT INTO months (name) VALUES
-('январь'), ('февраль'), ('март'), ('апрель'), ('май'), ('июнь'),
-('июль'), ('август'), ('сентябрь'), ('октябрь'), ('ноябрь'), ('декабрь')
-        ");
+        $months = Yii::$app->params['lists']['months'];
+        $rows = DAOMapper::toRecords($months, 'name');
+        $this->batchInsert('months', ['name'], $rows);
     }
 
     /**

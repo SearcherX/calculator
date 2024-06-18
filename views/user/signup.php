@@ -22,7 +22,7 @@ $this->title = "Регистрация"
                         <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => "Email", 'autocomplete' => 'new-email'])->label(false) ?>
                     </div>
                     <div class="mb-3 required ">
-                        <?= $form->field($model, 'firstName')->textInput(['placeholder' => "Имя"])->label(false) ?>
+                        <?= $form->field($model, 'username')->textInput(['placeholder' => "Имя"])->label(false) ?>
                     </div>
                     <div class="mb-3 required ">
                         <?= $form->field($model, 'password')->passwordInput(['class' => 'form-control', 'placeholder' => 'Пароль', 'autocomplete' => 'new-password']) ?>
