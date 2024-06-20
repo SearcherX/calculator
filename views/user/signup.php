@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 $this->title = "Регистрация"
 ?>
 
-<main class="ftco-section">
+<main>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6 border rounded-3 p-4 shadow">
@@ -16,23 +16,35 @@ $this->title = "Регистрация"
                     <?php $form = ActiveForm::begin([
                         'id' => 'user-form',
                         'enableAjaxValidation' => false,
-                        'validationUrl' => Url::toRoute('/user/signup-validation')
+                        'validationUrl' => Url::toRoute('/user/signup-validation'),
+                        'fieldConfig' => [
+                            'errorOptions' => ['class' => 'text-danger']
+                        ]
                     ]); ?>
                     <div class="mb-3 required ">
-                        <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => "Email", 'autocomplete' => 'new-email'])->label(false) ?>
+                        <?= $form->field($model, 'email')
+                            ->textInput(['autofocus' => true, 'placeholder' => "Email", 'autocomplete' => 'new-email',
+                            'class' => 'app-form-control form-control'])->label(false) ?>
                     </div>
                     <div class="mb-3 required ">
-                        <?= $form->field($model, 'username')->textInput(['placeholder' => "Имя"])->label(false) ?>
+                        <?= $form->field($model, 'username')->textInput(['placeholder' => "Имя",
+                            'autocomplete' => 'new-username',
+                            'class' => 'app-form-control form-control'])->label(false) ?>
                     </div>
                     <div class="mb-3 required ">
-                        <?= $form->field($model, 'password')->passwordInput(['class' => 'form-control', 'placeholder' => 'Пароль', 'autocomplete' => 'new-password']) ?>
+                        <?= $form->field($model, 'password')
+                            ->passwordInput(['placeholder' => 'Пароль', 'autocomplete' => 'new-password',
+                                'class' => 'app-form-control form-control'])->label(false) ?>
                     </div>
                     <div class="mb-3 required ">
-                        <?= $form->field($model, 'repeatPassword')->passwordInput(['placeholder' => "Повторите пароль"])->label(false) ?>
+                        <?= $form->field($model, 'repeatPassword')
+                            ->passwordInput(['placeholder' => 'Повторите пароль', 'autocomplete' => 'new-password',
+                                'class' => 'app-form-control form-control'])->label(false) ?>
                     </div>
                     <hr>
                     <div class="d-grid gap-2 mb-3">
-                        <?= Html::submitButton('Зарегистрироваться', ['class' => 'btn btn-warning  btn-block ', 'name' => 'user-button']) ?>
+                        <?= Html::submitButton('Зарегистрироваться', ['class' => 'btn btn-block app-btn',
+                            'name' => 'user-button']) ?>
                     </div>
                     <?php ActiveForm::end(); ?>
                 </div>

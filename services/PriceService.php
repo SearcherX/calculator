@@ -5,6 +5,7 @@ namespace app\services;
 use app\helpers\DAOMapper;
 use app\helpers\RenderHelper;
 use app\repositories\interfaces\PriceRepositoryInterface;
+use Yii;
 use yii\web\BadRequestHttpException;
 use yii\web\NotFoundHttpException;
 
@@ -28,7 +29,7 @@ class PriceService
         $rows = $this->priceRepository->findPriceByTypeName($type);
 
         if (count($rows) === 0) {
-            throw new NotFoundHttpException('Raw type not found');
+            throw new NotFoundHttpException(Yii::t('app', 'raw type not found'));
         }
 
         $data = DAOMapper::getMonthsAndTonnagesFromRecords($rows);
@@ -42,7 +43,7 @@ class PriceService
         $rows = $this->priceRepository->findPriceByMonthAndTonnageAndType($month, $tonnage, $type);
 
         if ($rows === false) {
-            throw new NotFoundHttpException('There is no price for the selected parameters');
+            throw new NotFoundHttpException(Yii::t('app', 'price not found'));
         }
 
         return $rows['price'];
@@ -54,7 +55,7 @@ class PriceService
     public function addPrice(string $month, int $tonnage, string $type, int $price): void
     {
         if ($this->priceRepository->addPrice($month, $tonnage, $type, $price) === 0) {
-            throw new BadRequestHttpException('Incorrect parameters');
+            throw new BadRequestHttpException(Yii::t('app', 'incorrect parameters'));
         }
     }
 
@@ -65,7 +66,7 @@ class PriceService
     {
         if ($this->priceRepository->updatePrice($month, $tonnage, $type, $price) === 0) {
             throw new NotFoundHttpException(
-                'There is no price for the selected parameters or the new price is the same as the current one'
+                Yii::t('app', 'price not found or equals')
             );
         }
     }
@@ -76,7 +77,7 @@ class PriceService
     public function deletePrice(string $month, int $tonnage, string $type): void
     {
         if ($this->priceRepository->removePrice($month, $tonnage, $type) === 0) {
-            throw new NotFoundHttpException('There is no price for the selected parameters');
+            throw new NotFoundHttpException(Yii::t('app', 'price not found'));
         }
 
     }

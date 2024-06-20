@@ -7,7 +7,7 @@ use yii\helpers\Html;
 $this->title = 'Журнал расчетов';
 ?>
     <main>
-        <div class="history">
+        <div class="history mt-2">
             <div class="row px-5">
                 <h2 class="text-center"><?= Html::encode($this->title) ?></h2>
 
@@ -25,42 +25,56 @@ $this->title = 'Журнал расчетов';
                             'attribute' => 'id',
                             'label' => 'ID',
                             'filter' => false,
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
 
                         ],
                         [
-                            'attribute' => 'user.email',
+                            'attribute' => 'email',
                             'label' => 'E-mail',
+                            'value' => 'user.email',
                             'visible' => Yii::$app->user->can('viewProfile'),
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
-                            'attribute' => 'user.username',
+                            'attribute' => 'username',
+                            'value' => 'user.username',
                             'label' => 'Имя пользователя',
                             'visible' => Yii::$app->user->can('viewProfile'),
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
                             'attribute' => 'raw_type',
                             'label' => 'Тип сырья',
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'value' => function ($data) {
+                                return mb_convert_case($data->raw_type, MB_CASE_TITLE, 'UTF-8');
+                            },
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
 
                         ],
                         [
                             'attribute' => 'month',
                             'label' => 'Месяц',
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'value' => function ($data) {
+                                return mb_convert_case($data->month, MB_CASE_TITLE, 'UTF-8');
+                            },
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
                             'attribute' => 'tonnage',
                             'label' => 'Тоннаж',
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
                             'attribute' => 'price',
                             'label' => 'Стоимость доставки',
-                            'filter' => false,
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
                             'attribute' => 'created_at',
@@ -68,7 +82,8 @@ $this->title = 'Журнал расчетов';
                                 return date('d.m.Y H:i:s', strtotime($data['created_at']));
                             },
                             'label' => 'Дата',
-                            'sortLinkOptions' => ['class' => 'link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'],
+                            'sortLinkOptions' => ['class' => 'app-link link-offset-2 link-underline-opacity-25 
+                            link-underline-opacity-100-hover'],
                         ],
                         [
                             'class' => ActionColumn::class,

@@ -29,10 +29,51 @@ header .nav-link {
 }
 
 header .nav-item:hover > .nav-link,
-header .dropdown-item:hover {
+header .dropdown-item:hover,
+#manager-menu .list-group-item:hover, .app-btn:hover {
     background-color: #2C6687 !important;
 }
 
 .menu-container {
     padding: 0 !important;
+}
+
+.app-menu {
+    background-color: #3A8DB7 !important;
+    color: white !important;
+    border-radius: 0 !important;
+    border: white 2px solid !important;
+    border-bottom: none !important;
+}
+
+.list-group-item:last-child {
+    border-bottom: white 2px solid !important;
+}
+
+.app-link {
+    text-decoration-color: #3A8DB7 !important;
+    color: #3A8DB7 !important;
+}
+.app-btn, .page-item.active > .page-link {
+    background-color: #3A8DB7 !important;
+    color: white !important;
+}
+
+.page-link {
+    color: #3A8DB7 !important;
+    border-color: #3A8DB7 !important;
+}
+
+.app-card, .app-form-control, .page-item.active > .page-link {
+    border-color: #3A8DB7 !important;
+}
+
+hr {
+    border-top-width: 2px !important;
+    opacity: 1 !important;
+    border-color: #3A8DB7 !important;
+}
+
+.app-form-control:focus, .page-link:focus {
+    box-shadow: 0 0 0 0.12rem #2C6687 !important;
 }

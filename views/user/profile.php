@@ -6,19 +6,17 @@ $this->title = 'Информация';
 ?>
 
 <main>
-    <div class="calculator-profile">
+    <div class="calculator-profile mt-4">
         <h2 class="text-center"><?= Html::encode($this->title) ?></h2>
-
 
         <div class="container py-4">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card mb-4">
+                    <div class="card app-card mb-4">
                         <div class="card-body text-center">
                             <img src=
-                                 "<?= Yii::$app->authManager->checkAccess($model->id, 'viewProfile') ?
-                                     'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1.webp' :
-                                     'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp' ?>"
+                                 "<?= 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairTheCaesar&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=PastelRed&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Yellow'
+                                      ?>"
                                  alt="avatar"
                                  class="rounded-circle img-fluid" style="width: 150px;">
                             <h5 class="my-3"><?= $model->username ?></h5>
@@ -33,7 +31,7 @@ $this->title = 'Информация';
 
                 </div>
                 <div class="col-lg-8">
-                    <div class="card mb-4">
+                    <div class="card app-card mb-4">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3">
