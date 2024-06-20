@@ -1,6 +1,7 @@
 <?php
 
 use app\helpers\RenderHelper;
+use yii\grid\GridView;
 
 ?>
 
@@ -30,30 +31,17 @@ use app\helpers\RenderHelper;
             </div>
         </div>
         <div class="<?= isset($model->price) ? 'col-9 mt-3' : 'col-6' ?> table-responsive border rounded-1 shadow-lg p-0">
-            <table class="table table-hover table-striped text-center">
-                <thead>
-                <tr>
-                    <th>Т/М</th>
-                    <?php foreach ($headTableTM as $tonnagePrices): ?>
-                        <th><?= $tonnagePrices ?></th>
-                    <?php endforeach ?>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($bodyTableTM as $month => $tonnages): ?>
-                    <tr>
-                        <td><?= mb_convert_case($month, MB_CASE_TITLE, 'UTF-8') ?></td>
-                        <?php foreach ($tonnages as $tonnage => $price): ?>
-                            <td class="<?= RenderHelper::getBorderClass(
-                                $month, $tonnage, $model->month, $model->tonnage
-                            ) ?>">
-                                <?= $price ?>
-                            </td>
-                        <?php endforeach ?>
-                    </tr>
-                <?php endforeach ?>
-                </tbody>
-            </table>
+
+            <?php
+            $columns = RenderHelper::getColumns($dataProvider, $model->month, $model->tonnage, 'with-border')
+            ?>
+
+            <?= GridView::widget([
+                'dataProvider' => $dataProvider,
+                'summary' => false,
+                'tableOptions' => ['class' => 'table table-striped text-center'],
+                'columns' => $columns
+            ]) ?>
         </div>
     </div>
 </div>

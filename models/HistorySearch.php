@@ -10,7 +10,6 @@ use yii\db\Expression;
 /**
  * @property int $id
  * @property string $raw_type
- * @property User $user
  * @property string $month
  * @property int $tonnage
  * @property int $price
@@ -19,30 +18,22 @@ use yii\db\Expression;
  */
 class HistorySearch extends History
 {
-    public static function tableName()
-    {
-        return 'histories';
-    }
+    public $username;
+    public $email;
 
     public function rules()
     {
         return [
-            [['created_at'], 'date', 'format' => 'd.m.Y'],
-            [['tonnage'], 'integer'],
-            [['month', 'raw_type'], 'safe'],
+            [['tonnage', 'price'], 'integer'],
+            [['username', 'email', 'month', 'raw_type', 'created_at'], 'safe'],
         ];
-    }
-
-    public function setUser(User $user)
-    {
-        $this->user = $user;
     }
 
     public function search($params)
     {
         $canViewHistory = Yii::$app->user->can('viewHistory');
-        $query = $canViewHistory ? History::find() : History::find()->where(['user_id' => Yii::$app->user->identity->getId()]);
-
+        $query = $canViewHistory ? History::find(): History::find()->where(['user_id' => Yii::$app->user->identity->getId()]);
+        $query->joinWith('user');
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -51,23 +42,48 @@ class HistorySearch extends History
             ],
         ]);
 
-//         load the search form data and validate
+        $dataProvider->setSort([
+            'attributes' => [
+                'id',
+                'username' => [
+                    'asc' => ['user.username' => SORT_ASC],
+                    'desc' => ['user.username' => SORT_DESC],
+                    'label' => 'Имя пользователя'
+                ],
+                'email' => [
+                    'asc' => ['user.email' => SORT_ASC],
+                    'desc' => ['user.email' => SORT_DESC],
+                    'label' => 'Емейл'
+                ],
+                'raw_type',
+                'month',
+                'tonnage',
+                'price',
+                'created_at'
+            ]
+        ]);
+
         if (!($this->load($params) && $this->validate())) {
             return $dataProvider;
         }
 
-        // adjust the query by adding the filters
         $query
+            ->andFilterWhere(['like', 'user.username', $this->username])
+            ->andFilterWhere(['like', 'user.email', $this->email])
             ->andFilterWhere(['like', 'tonnage', $this->tonnage])
             ->andFilterWhere(['like', 'month', $this->month])
             ->andFilterWhere(['like', 'raw_type', $this->raw_type])
-            ->andFilterWhere(
+            ->andFilterWhere(['like', 'price', $this->price]);
+
+        if (empty($this->created_at) === false) {
+            $query->andFilterWhere(
                 [
-                    '=',
-                    new Expression('DATE_FORMAT(created_at, "%d.%m.%Y")'),
-                    date('d.m.Y', strtotime($this->created_at)),
+                    'LIKE',
+                    'DATE(histories.created_at)',
+                    $this->created_at
                 ]
             );
+        }
 
         return $dataProvider;
     }

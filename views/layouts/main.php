@@ -39,7 +39,6 @@ AppAsset::register($this);
         ]);
 
         $items = [
-            ['label' => 'Главная', 'url' => ['/']],
             ['label' => 'Расчет доставки', 'url' => ['/calculator']],
             ['label' => 'Войти в систему', 'url' => ['/user/login'], 'visible' => Yii::$app->user->isGuest],
             Yii::$app->user->isGuest ? '' : ['label' => Yii::$app->user->identity->username,
