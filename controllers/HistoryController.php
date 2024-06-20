@@ -6,28 +6,13 @@ use app\models\History;
 use app\models\HistorySearch;
 use app\models\User;
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\ForbiddenHttpException;
 
 class HistoryController extends Controller
 {
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::class,
-                'rules' => [
-                    [
-                        'actions' => ['index', 'view', 'delete'],
-                        'allow' => true,
-                        'roles' => ['@']
-                    ],
-                ]
-            ]
-        ];
-    }
-
     public function actionIndex()
     {
         $searchModel = new HistorySearch();
@@ -42,10 +27,16 @@ class HistoryController extends Controller
     public function actionView($id)
     {
         $model = History::findOne($id);
-        $owner_id = $model->user->id;
+        $ownerId = $model->user->id;
 
-        if (Yii::$app->user->can('viewHistory', ['owner_id' => $owner_id])) {
-            return $this->renderAjax('view', ['model' => $model]);
+        if (Yii::$app->user->can('viewHistory', ['owner_id' => $ownerId])) {
+
+            $dataProvider = new ArrayDataProvider([
+                'allModels' => $model->getPrices(),
+                'pagination' => false
+            ]);
+
+            return $this->renderAjax('view', ['model' => $model, 'dataProvider' => $dataProvider]);
         }
 
         throw new ForbiddenHttpException('Нет доступа');

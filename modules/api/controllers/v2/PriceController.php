@@ -50,6 +50,7 @@ class PriceController extends Controller
     public function actionIndex()
     {
         $request = Yii::$app->request;
+        $message = null;
 
         switch ($request->getMethod()) {
             case 'GET':
@@ -73,9 +74,10 @@ class PriceController extends Controller
                 $tonnage = $request->post('tonnage');
                 $price = $request->post('price');
                 $this->priceService->addPrice($month, $tonnage, $type, $price);
-                Yii::$app->response->setStatusCode(201, 'Price added successfully');
+                $message = Yii::t('app', 'price added successfully');
+                Yii::$app->response->setStatusCode(201, $message);
 
-                return ['message' => 'Price added successfully'];
+                return ['message' => $message];
             }
 
             case 'PATCH':
@@ -85,8 +87,9 @@ class PriceController extends Controller
                 $month = $request->get('month');
                 $price = $request->post('price');
                 $this->priceService->updatePrice($month, $tonnage, $type, $price);
+                $message = Yii::t('app', 'price updated successfully');
 
-                return ['message' => 'Price updated successfully'];
+                return ['message' => $message];
             }
 
             case 'DELETE':
@@ -95,9 +98,10 @@ class PriceController extends Controller
                 $tonnage = $request->get('tonnage');
                 $month = $request->get('month');
                 $this->priceService->deletePrice($month, $tonnage, $type);
-                Yii::$app->response->setStatusCode(204, 'Price deleted successfully');
+                $message = Yii::t('app', 'price deleted successfully');
+                Yii::$app->response->setStatusCode(204, $message);
 
-                return ['message' => 'Price deleted successfully'];
+                return ['message' => $message];
             }
         }
 

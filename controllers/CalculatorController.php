@@ -13,6 +13,7 @@ use app\services\TonnageService;
 use app\services\TypeService;
 use Dotenv\Dotenv;
 use Yii;
+use yii\data\ArrayDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
@@ -88,18 +89,20 @@ class CalculatorController extends Controller
                 ]);
             }
 
-            $tonnagesHead = DAOMapper::getTonnagesFromTable($prices);
-
             if (Yii::$app->user->isGuest === false) {
                 $history = new History();
                 $history->snapshot($formModel, $price, $prices);
             };
 
+            $dataProvider = new ArrayDataProvider([
+                'allModels' => $prices,
+                'pagination' => false
+            ]);
+
             return $this->renderAjax('result', [
                 'model' => $formModel,
                 'price' => $price,
-                'headTableTM' => $tonnagesHead,
-                'bodyTableTM' => $prices,
+                'dataProvider' => $dataProvider
             ]);
         }
 
@@ -119,6 +122,7 @@ class CalculatorController extends Controller
             if (empty(Yii::$app->request->post()) === false) {
                 $model->load(Yii::$app->request->post());
             }
+
             Yii::$app->response->format = Response::FORMAT_JSON;
             return ActiveForm::validate($model);
         }
