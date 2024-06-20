@@ -6,13 +6,13 @@ use yii\widgets\ActiveForm;
 
 ?>
 <?php if (Yii::$app->session->hasFlash('success-login')): ?>
-<?php $arr = array_reverse(Yii::$app->authManager->getRolesByUser(Yii::$app->user->getId())) ?>
+    <?php $arr = array_reverse(Yii::$app->authManager->getRolesByUser(Yii::$app->user->getId())) ?>
 
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         Здравствуйте, <?= array_pop($arr)->description ?>&nbsp
         <strong><?= Yii::$app->session->getFlash('success-login') ?></strong>, вы авторизовались в системе
         расчета стоимости доставки. Теперь все ваши расчеты будут сохранены для последующего просмотра в
-        <a href="/history" class="link-primary">журнале расчетов</a>
+        <a href="/history" class="app-link">журнале расчетов</a>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
@@ -29,7 +29,10 @@ use yii\widgets\ActiveForm;
             <?php $form = ActiveForm::begin([
                 'id' => 'calc-form',
                 'enableAjaxValidation' => true,
-                'validationUrl' => Url::to(['calculator/validate'])
+                'validationUrl' => Url::to(['calculator/validate']),
+                'fieldConfig' => [
+                    'errorOptions' => ['class' => 'text-danger']
+                ]
             ]) ?>
             <div class=" mb-3 required ">
                 <?= $form->field($model, 'month')->dropDownList(

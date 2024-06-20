@@ -9,6 +9,9 @@ $params = require __DIR__ . '/params.php';
 return [
     'id' => 'basic',
     'name' => 'Калькулятор',
+    'layout' => 'main',
+    'language' => 'ru',
+    'defaultRoute' => 'site/index',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'mvc'],
     'modules' => [
@@ -20,7 +23,7 @@ return [
         ],
         'admin' => [
             'class' => 'mdm\admin\Module',
-            'layout' => 'left-menu',
+            'layout' => '@app/views/layouts/left-menu.php',
             'mainLayout' => '@app/views/layouts/main.php'
         ],
         'gii' => [
@@ -28,9 +31,6 @@ return [
             'allowedIPs' => ['172.18.0.1']
         ]
     ],
-    'layout' => 'main',
-    'language' => 'ru',
-    'defaultRoute' => 'site/index',
     'container' => [
         'singletons' => [
             \app\repositories\interfaces\MonthRepositoryInterface::class => \app\repositories\SqlMonthRepository::class,

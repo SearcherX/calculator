@@ -33,12 +33,22 @@ class History extends ActiveRecord
 
     public function getPrices()
     {
-        return json_decode($this->table_data);
+        return json_decode($this->table_data, true);
     }
 
     public function getUser()
     {
         return $this->hasOne(User::class, ['id' => 'user_id']);
+    }
+
+    public function getUsername()
+    {
+        return $this->user->username;
+    }
+
+    public function getEmail()
+    {
+        return $this->user->email;
     }
 
     public function getCalculationDate()
@@ -56,6 +66,12 @@ class History extends ActiveRecord
             $this->table_data = json_encode($prices);
             $this->link('user', Yii::$app->user->identity);
         }
+    }
+
+    public function attributeLabels() {
+        return [
+            'username' => 'Имя пользователя',
+        ];
     }
 
 }

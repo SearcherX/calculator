@@ -13,7 +13,18 @@ class CalculatorForm extends Model
     public function rules()
     {
         return [
-            [['month', 'tonnage', 'raw_type'], 'required', 'message' => 'Пожалуйста, выберите значение из списка'],
+            [['month', 'tonnage', 'raw_type'], 'required', 'message' => 'Пожалуйста, выберите {attribute}'],
         ];
     }
+
+    public function attributeLabels()
+    {
+        return [
+            'month' => 'месяц',
+            'tonnage' => 'тоннаж',
+            'raw_type' => 'тип сырья'
+        ];
+    }
+
+
 }

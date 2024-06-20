@@ -34,7 +34,7 @@ class UserController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-        return $this->goHome();
+        return $this->redirect('/calculator');
     }
 
     public function actionSignup()
