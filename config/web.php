@@ -10,7 +10,7 @@ return [
     'id' => 'basic',
     'name' => 'Калькулятор',
     'layout' => 'main',
-    'language' => 'ru',
+    'language' => 'en',
     'defaultRoute' => 'site/index',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'mvc'],
@@ -92,7 +92,8 @@ return [
             'user/login',
             'user/signup',
             'api/*',
-            'swagger-ui/*'
+            'swagger-ui/*',
+            'site/*'
         ]
     ],
     'params' => $params,

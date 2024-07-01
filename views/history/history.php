@@ -15,7 +15,6 @@ $this->title = 'Журнал расчетов';
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
                     'tableOptions' => ['class' => 'table table-bordered table-hover'],
-                    'rowOptions' => ['class' => 'mb3'],
                     'layout' => "{pager}\n{summary}\n{items}",
                     'pager' => [
                         'class' => 'yii\bootstrap5\LinkPager'

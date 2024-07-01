@@ -130,4 +130,9 @@ class CalculatorController extends Controller
         return null;
     }
 
+    public function actionDebug()
+    {
+        phpinfo();
+    }
+
 }

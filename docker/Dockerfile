@@ -19,7 +19,9 @@ COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr
 
 RUN install-php-extensions @composer-2 \
     bcmath mcrypt pdo_mysql gd intl opcache \
-    && apk --no-cache add bash
+    && apk --no-cache add bash \
+    && pecl install xdebug-2.5.0 \
+    && docker-php-ext-enable xdebug
 
 WORKDIR /var/www/html
 

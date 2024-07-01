@@ -100,6 +100,7 @@ class DAOMapper
     /**
      * @throws \Exception
      */
+
     public static function toPriceRecords(array $arr, array $months, array $tonnages, array $types): array
     {
         $records = [];
