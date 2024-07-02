@@ -2028,9 +2028,3 @@ ldap.max_links = -1
 ; Local Variables:
 ; tab-width: 4
 ; End:
-
-[xdebug]
-zend_extension=xdebug
-xdebug.output_dir = /tmp/xdebug
-xdebug.remote_port=9001
-xdebug.mode=develop,trace,profile
